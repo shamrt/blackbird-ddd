@@ -1,0 +1,363 @@
+/*
+Theme Name: BlackBird-DDD
+Theme URI: http://www.inkthemes.com/wp-themes/blackbird-responsive-wordpress-theme/
+Description: Blackbird-DDD is derived from the free Blackbird Lite theme; it shares some elements --- specifically on the front-page --- but it ultimately an altogether different theme.
+Author: Shane Martin
+Author URI: http://sha.nemart.in
+Version: 1.1.6
+License: GNU General Public License
+License URI: license.txt
+Tags:two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+*/
+// @import url(css/reset.css);
+
+@import "mixins";
+
+@import "compass";
+
+@import "grid";
+
+@import "base";
+
+@import "nav";
+@import "plugins/flexslider";
+@import "front-page";
+@import "pages";
+
+@import "wordpress";
+@import "searchform";
+
+// @import url(css/prettyPhoto.css);
+
+.header {
+  max-width: 100%;
+
+  #logo {
+    @include box-shadow(0 0 1px rgba(0, 0, 0, 0.8));
+    line-height: 0;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+      
+    a, a:hover { 
+      border: none;
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+    } 
+
+    .sh_bottom{
+        @include box-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+        @include border-radius(50px);
+        width: 100%; height: 45%;
+        position: absolute;
+        z-index: -2;
+        bottom: 0; right: 0;
+    }
+  }
+}
+
+// .header-info {
+//   @extend .grid_8;
+//   margin-top: 28px;
+//   text-align: right;
+//   p {
+//     &.cell {
+//       display: block;
+//     }
+//     font-size: 18px;
+//     font-weight: normal;
+//     line-height: 24px;
+//     font-family: Rokkitt;
+//   }
+// }
+
+/*testimonial
+=============================================*/
+
+.testimonial {
+  color: #717273;
+  font-size: 13px;
+  margin: 0;
+  max-width: 100%;
+  margin-bottom: 65px;
+  h1 {
+    font-size: 21px;
+    color: #122432;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background: url(images/titlebg.png) center repeat-x;
+    margin-bottom: 33px;
+    text-align: center;
+  }
+  .titlebg {
+    background-image: none;
+    background: none;
+    background-color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .slides_container {
+    /*width:950px;*/
+    max-width: 100%;
+    div.slide {
+      width: 950px;
+    }
+  }
+  .item {
+    width: 950px;
+    margin: 0 0px;
+    p {
+      color: #999;
+      text-align: center;
+    }
+  }
+  .pagination {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 80px;
+    li {
+      display: inline;
+      margin: 0 3px;
+      list-style: none;
+      a {
+        display: inline-block;
+        width: 10px;
+        height: 0;
+        padding-top: 10px;
+        background-image: url(images/pagination22.png);
+        background-position: 0 0;
+        overflow: hidden;
+      }
+      &.current a {
+        background-position: 0 -12px;
+      }
+    }
+  }
+}
+
+/* #testimonial slider
+================================================== */
+
+#slides_testimonial {
+  .prev {
+    cursor: pointer;
+    background: #515156;
+    height: 20px;
+    width: 40px;
+    color: #fafafa;
+    margin: 0 2px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none !important;
+    float: right;
+  }
+  .next {
+    cursor: pointer;
+    background: #515156;
+    height: 20px;
+    width: 40px;
+    color: #fafafa;
+    margin: 0 2px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none !important;
+    float: right;
+    &:hover {
+      background: #f7d705 !important;
+    }
+  }
+  .prev:hover {
+    background: #f7d705 !important;
+  }
+}
+
+
+/*Sidebar 
+====================================================*/
+
+.sidebar {
+  @extend .grid_7;
+  padding-left: 25px;
+  padding-top: 40px;
+
+  h3 {
+    border-bottom: 1px dashed #d5d5d8;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  p {
+    text-align: left;
+  }
+  ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+
+    li {
+      margin-left: 0;
+      padding: 5px 0;
+      font-size: 14px;
+      font-family: "Trebuchet MS";
+
+      li {
+        margin-left: 15px;
+      }
+
+      a {
+        color: #7b7b7b;
+        font-size: 14px;
+        font-family: "Trebuchet MS";
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+
+  li {
+    &.twidget {
+      border-bottom: 1px dashed #d5d5d8;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    span.twidgetlink {
+      color: $link-color;
+    }
+  }
+}
+
+
+
+/*Footer 
+================================================*/
+
+.footer-wrapper {
+  background-color: $black;
+  clear: both;
+  overflow: hidden;
+}
+
+.footer {
+  $footer-black: lighten($black, 30%);
+  background: $black;
+  padding: 20px 1%;
+  overflow: hidden;
+
+  .widget_inner {
+    @include span(6);
+    color: $footer-black;
+    // padding: 0 2%;
+
+    &.first {
+      @include span(12);
+      @include grid_first;
+    }
+
+    &.last {
+      overflow: hidden;
+      padding-right: 18px;
+    }
+
+    .sitelink a {
+      color: $footer-black;
+      margin-top: 25px;
+      display: block;
+      &:hover {
+        color: $link-active;
+      }
+    }
+
+    a {
+      color: $footer-black;
+      &:hover {
+        color: $link-color;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+      font-size: 26px;
+      padding-bottom: 12px;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        margin-left: 0px;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: "Trebuchet MS";
+        padding-bottom: 10px;
+        li {
+          padding: 2px 0 2px 10px;
+        }
+        a {
+          color: $footer-black;
+          &:hover {
+            color: $link-active;
+          }
+        }
+      }
+
+      &.social-links {
+        @include reset-box-model;
+      // list-style: none;
+
+        li {
+          margin: 0;
+          a {
+            margin: 0 10px 0 0;
+            &:hover! {}
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer_bottom {
+  @include clearfix;
+  background-color: #000;
+  padding: 0 1%;
+
+  .footer_bottom_inner span {
+    &.copyright {
+      float: right;
+      color: #9f9e9e;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    &.blog-desc {
+      float: left;
+      color: #4d4c4c;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
+
+/* Responsive styling
+=============================================*/
+
+/* Media screen */
+@media only screen and (max-width: 960px) {
+// @media only screen and (min-width: 768px) and (max-width: 960px) {
+  @import "960down";
+}
+
+@media only screen and (max-width: 767px) {
+  @import "767down";
+}
+
+@media only screen and (max-width: 480px) {
+  @import "480down";
+}

@@ -1,0 +1,204 @@
+/* line 1, ../../scss/css/color/pink.scss */
+.menu_wrapper {
+  background: #cd3d5f;
+}
+
+/* line 7, ../../scss/css/color/pink.scss */
+#menu li a {
+  color: #efb6c3;
+  text-shadow: 0 1px 1px #aa0a30;
+}
+/* line 11, ../../scss/css/color/pink.scss */
+#menu li.current-menu-item a, #menu li.current_page_item a, #menu li.current-menu-parent a, #menu li.current_page_parent a {
+  background: url(images/menutippink.png) bottom center no-repeat;
+}
+/* line 15, ../../scss/css/color/pink.scss */
+#menu li a.selected, #menu li a:hover {
+  background: url(images/menutippink.png) bottom center no-repeat;
+}
+/* line 19, ../../scss/css/color/pink.scss */
+#menu li li a {
+  color: #cbb0f1;
+}
+/* line 21, ../../scss/css/color/pink.scss */
+#menu li li a.selected, #menu li li a:hover {
+  color: #cbb0f1;
+}
+/* line 27, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li > ul {
+  background: #cd3d5f;
+}
+/* line 29, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li > ul li > ul {
+  background: #cd3d5f;
+}
+/* line 35, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li li a:link, #menu .ddsmoothmenu li li a:visited {
+  color: #fff;
+  background: url(images/menusep-pink.png) bottom repeat-x;
+}
+/* line 41, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li li:last-child a:link, #menu .ddsmoothmenu li li:last-child a:visited {
+  background: none;
+}
+/* line 45, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li li a {
+  background: url(images/menusep-pink.png) bottom repeat-x;
+}
+/* line 47, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li li a.selected, #menu .ddsmoothmenu li li a:hover {
+  color: #efb6c3;
+  background: url(images/menusep-pink.png) bottom repeat-x;
+}
+/* line 55, ../../scss/css/color/pink.scss */
+#menu li.current-menu-item a:hover, #menu li.current-menu-parent a:hover, #menu li.current_page_parent a:hover, #menu li a:hover.selected {
+  color: #fff;
+}
+/* line 59, ../../scss/css/color/pink.scss */
+#menu .ddsmoothmenu li li, #menu li.current_page_item a {
+  color: #fff;
+}
+
+/*top search
+====================================================*/
+/* Slider 
+==========================================*/
+/* line 70, ../../scss/css/color/pink.scss */
+.slider-wrapper {
+  border-bottom: 1px solid #d74064;
+}
+
+/* #Slider Style Flexslider
+================================================== */
+/* Direction Nav */
+/* line 80, ../../scss/css/color/pink.scss */
+.flex-direction-nav li a {
+  background: #515156;
+  color: #fafafa;
+}
+/* line 83, ../../scss/css/color/pink.scss */
+.flex-direction-nav li a:hover {
+  background: #cd3d5f !important;
+}
+/* line 87, ../../scss/css/color/pink.scss */
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 96, ../../scss/css/color/pink.scss */
+.flex-control-nav li a {
+  background: url(images/sppink.png) no-repeat;
+}
+
+/*Feature Content
+================================================*/
+/* line 103, ../../scss/css/color/pink.scss */
+.feature-content h1 a:hover {
+  color: #cd3d5f;
+}
+
+/* line 108, ../../scss/css/color/pink.scss */
+.feature-content-inner .circle {
+  background: #cd3d5f;
+}
+/* line 110, ../../scss/css/color/pink.scss */
+.feature-content-inner .circle img {
+  background: #cd3d5f;
+}
+/* line 112, ../../scss/css/color/pink.scss */
+.feature-content-inner .circle img:hover {
+  color: #efb6c3;
+}
+/* line 117, ../../scss/css/color/pink.scss */
+.feature-content-inner .read-more {
+  background: url(images/readmorepink.png) center no-repeat;
+}
+
+/* line 122, ../../scss/css/color/pink.scss */
+.feature-content .read-more:hover {
+  color: #efb6c3;
+}
+
+/*Feature-post
+==================================================*/
+/* line 129, ../../scss/css/color/pink.scss */
+.feature-post .feature-post-inner h1 a:hover {
+  color: #cd3d5f;
+}
+
+/* #testimonial slider
+================================================== */
+/* line 136, ../../scss/css/color/pink.scss */
+.testimonial .pagination li a {
+  background-image: url(images/tppink.png);
+}
+
+/* line 141, ../../scss/css/color/pink.scss */
+#slides_testimonial .next, #slides_testimonial .prev {
+  background: #515156;
+}
+/* line 144, ../../scss/css/color/pink.scss */
+#slides_testimonial .next:hover, #slides_testimonial .prev:hover {
+  background: #cd3d5f !important;
+}
+
+/*sinupform 
+====================================================*/
+/* line 153, ../../scss/css/color/pink.scss */
+.signupform input[type="text"]:focus {
+  border: 1px solid #cd3d5f;
+}
+/* line 156, ../../scss/css/color/pink.scss */
+.signupform input[type="submit"]:hover {
+  border: solid 1px #cd3d5f;
+}
+
+/*Blog Page
+===================================================*/
+/* line 165, ../../scss/css/color/pink.scss */
+.content-bar .post .post_title a:hover {
+  color: #cd3d5f;
+}
+/* line 168, ../../scss/css/color/pink.scss */
+.content-bar .post .post_content .read_more {
+  color: #cd3d5f;
+}
+/* line 170, ../../scss/css/color/pink.scss */
+.content-bar .post .post_content .read_more:hover {
+  opacity: 0.5;
+  color: #cd3d5f;
+}
+/* line 176, ../../scss/css/color/pink.scss */
+.content-bar .post .post_meta a {
+  color: #cd3d5f;
+}
+/* line 178, ../../scss/css/color/pink.scss */
+.content-bar .post .post_meta a:hover {
+  opacity: 0.5;
+  color: #cd3d5f;
+}
+/* line 183, ../../scss/css/color/pink.scss */
+.content-bar .post .post_meta .post_comment a {
+  color: #cd3d5f;
+}
+
+/*Sidebar 
+====================================================*/
+/* line 192, ../../scss/css/color/pink.scss */
+.sidebar ul li a:hover {
+  color: #cd3d5f;
+}
+
+/*Footer 
+================================================*/
+/* line 201, ../../scss/css/color/pink.scss */
+.footer .widget_inner .sitelink a:hover, .footer .widget_inner a:hover {
+  color: #cd3d5f;
+}
+/* line 205, ../../scss/css/color/pink.scss */
+.footer ul li a:hover {
+  color: #cd3d5f;
+}

@@ -1,0 +1,362 @@
+/* BUTTONS */
+/* ----------------------------------------- */
+/* line 4, ../scss/css/shortcode.scss */
+.button {
+  background-image: url(button-image/button.png);
+  float: left;
+}
+/* line 5, ../scss/css/shortcode.scss */
+.button span {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  width: 20px;
+  height: 37px;
+  background-position: right top;
+  background-image: url(button-image/button.png);
+  float: left;
+}
+/* line 18, ../scss/css/shortcode.scss */
+.button:hover {
+  background-position: left -37px;
+  text-decoration: none;
+}
+/* line 21, ../scss/css/shortcode.scss */
+.button:hover span {
+  background-position: right -37px;
+  text-decoration: none;
+}
+
+/* line 28, ../scss/css/shortcode.scss */
+a.button2 {
+  display: block;
+  position: relative;
+  padding: 0 0 0 12px;
+  height: 31px;
+  text-align: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #3a3a3a;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'QlassikMediumRegular', Tahoma, Arial, sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+  background-image: url(button-image/button2.png);
+  float: left;
+}
+/* line 44, ../scss/css/shortcode.scss */
+a.button2:link, a.button2:visited {
+  display: block;
+  position: relative;
+  padding: 0 0 0 12px;
+  height: 31px;
+  text-align: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #3a3a3a;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'QlassikMediumRegular', Tahoma, Arial, sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+/* line 61, ../scss/css/shortcode.scss */
+a.button2 span {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -12px;
+  width: 12px;
+  height: 31px;
+  background-position: right top;
+  background-image: url(button-image/button2.png);
+  float: left;
+}
+/* line 74, ../scss/css/shortcode.scss */
+a.button2:hover {
+  background-position: left -31px;
+  text-decoration: none;
+}
+
+/* line 80, ../scss/css/shortcode.scss */
+li.selected {
+  background-position: left -31px;
+  text-decoration: none;
+}
+
+/* line 85, ../scss/css/shortcode.scss */
+a.button2:hover span, li.selected span {
+  background-position: right -31px;
+  text-decoration: none;
+}
+
+/* line 90, ../scss/css/shortcode.scss */
+.button a, a.button2 {
+  color: #3a3a3a;
+}
+
+/* line 95, ../scss/css/shortcode.scss */
+.button2.blue {
+  background-image: url(button-image/bluebutton2.png);
+  float: left;
+  color: #6288a9;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 100, ../scss/css/shortcode.scss */
+.button2.blue span {
+  background-image: url(button-image/bluebutton2.png);
+  float: left;
+  color: #6288a9;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 107, ../scss/css/shortcode.scss */
+.button2.pink {
+  background-image: url(button-image/pinkbutton2.png);
+  float: left;
+  color: #b17aac;
+  text-shadow: 0px 1px 0px #ecd8ea;
+}
+/* line 112, ../scss/css/shortcode.scss */
+.button2.pink span {
+  background-image: url(button-image/pinkbutton2.png);
+  float: left;
+  color: #b17aac;
+  text-shadow: 0px 1px 0px #ecd8ea;
+}
+/* line 119, ../scss/css/shortcode.scss */
+.button2.green {
+  background-image: url(button-image/greenbutton2.png);
+  float: left;
+  color: #538976;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 124, ../scss/css/shortcode.scss */
+.button2.green span {
+  background-image: url(button-image/greenbutton2.png);
+  float: left;
+  color: #538976;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 131, ../scss/css/shortcode.scss */
+.button2.brown {
+  background-image: url(button-image/brownbutton2.png);
+  float: left;
+  color: #8e7d5c;
+  text-shadow: 0px 1px 0px #e4ddd0;
+}
+/* line 136, ../scss/css/shortcode.scss */
+.button2.brown span {
+  background-image: url(button-image/brownbutton2.png);
+  float: left;
+  color: #8e7d5c;
+  text-shadow: 0px 1px 0px #e4ddd0;
+}
+/* line 143, ../scss/css/shortcode.scss */
+.button2.yellow {
+  background-image: url(button-image/yellowbutton2.png);
+  float: left;
+  color: #868a4a;
+  text-shadow: 0px 1px 0px #d8dabc;
+}
+/* line 148, ../scss/css/shortcode.scss */
+.button2.yellow span {
+  background-image: url(button-image/yellowbutton2.png);
+  float: left;
+  color: #868a4a;
+  text-shadow: 0px 1px 0px #d8dabc;
+}
+
+/* line 158, ../scss/css/shortcode.scss */
+.button.pink {
+  background-image: url(button-image/pinkbutton.png);
+  float: left;
+  color: #b17aac;
+  text-shadow: 0px 1px 0px #ecd8ea;
+}
+/* line 163, ../scss/css/shortcode.scss */
+.button.pink span {
+  background-image: url(button-image/pinkbutton.png);
+  float: left;
+  color: #b17aac;
+  text-shadow: 0px 1px 0px #ecd8ea;
+}
+/* line 170, ../scss/css/shortcode.scss */
+.button.green {
+  background-image: url(button-image/greenbutton.png);
+  float: left;
+  color: #538976;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 175, ../scss/css/shortcode.scss */
+.button.green span {
+  background-image: url(button-image/greenbutton.png);
+  float: left;
+  color: #538976;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 182, ../scss/css/shortcode.scss */
+.button.brown {
+  background-image: url(button-image/brownbutton.png);
+  float: left;
+  color: #8e7d5c;
+  text-shadow: 0px 1px 0px #e4ddd0;
+}
+/* line 187, ../scss/css/shortcode.scss */
+.button.brown span {
+  background-image: url(button-image/brownbutton.png);
+  float: left;
+  color: #8e7d5c;
+  text-shadow: 0px 1px 0px #e4ddd0;
+}
+/* line 194, ../scss/css/shortcode.scss */
+.button.yellow {
+  background-image: url(button-image/yellowbutton.png);
+  float: left;
+  color: #868a4a;
+  text-shadow: 0px 1px 0px #d8dabc;
+}
+/* line 199, ../scss/css/shortcode.scss */
+.button.yellow span {
+  background-image: url(button-image/yellowbutton.png);
+  float: left;
+  color: #868a4a;
+  text-shadow: 0px 1px 0px #d8dabc;
+}
+
+/* line 209, ../scss/css/shortcode.scss */
+a.button.blue, a.button2.blue {
+  color: #6288a9;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 213, ../scss/css/shortcode.scss */
+a.button.green, a.button2.green {
+  color: #538976;
+  text-shadow: 0px 1px 0px #c7e5da;
+}
+/* line 217, ../scss/css/shortcode.scss */
+a.button.pink, a.button2.pink {
+  color: #b17aac;
+  text-shadow: 0px 1px 0px #ecd8ea;
+}
+/* line 221, ../scss/css/shortcode.scss */
+a.button.yellow, a.button2.yellow {
+  color: #868a4a;
+  text-shadow: 0px 1px 0px #d8dabc;
+}
+/* line 225, ../scss/css/shortcode.scss */
+a.button.brown, a.button2.brown {
+  color: #8e7d5c;
+  text-shadow: 0px 1px 0px #e4ddd0;
+}
+/* line 229, ../scss/css/shortcode.scss */
+a.buttons {
+  display: block;
+  position: relative;
+  padding: 0 17px 0 17px;
+  height: 30px;
+  text-align: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #3a3a3a;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'QlassikMediumRegular', Tahoma, Arial, sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 249, ../scss/css/shortcode.scss */
+a.buttons:link, a.buttons:visited {
+  display: block;
+  position: relative;
+  padding: 0 17px 0 17px;
+  height: 30px;
+  text-align: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #3a3a3a;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'QlassikMediumRegular', Tahoma, Arial, sans-serif;
+  text-shadow: 0px 1px 0px #ffffff;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 270, ../scss/css/shortcode.scss */
+a.buttons.white {
+  background: url("button-image/sprite-button.png") no-repeat 0 0;
+  float: left;
+}
+/* line 274, ../scss/css/shortcode.scss */
+a.buttons.blue {
+  background: url("button-image/sprite-button.png") no-repeat 0 -40px;
+  float: left;
+  color: #245d9a;
+  text-shadow: 0px 1px 0px #8cadcf;
+}
+/* line 279, ../scss/css/shortcode.scss */
+a.buttons.blue:hover {
+  background-position: 0 -81px;
+}
+/* line 283, ../scss/css/shortcode.scss */
+a.buttons.red {
+  background: url("button-image/sprite-button.png") no-repeat 0 -121px;
+  float: left;
+  color: #a42f27;
+  text-shadow: 0px 1px 0px #c57e79;
+}
+/* line 288, ../scss/css/shortcode.scss */
+a.buttons.red:hover {
+  background-position: 0 -161px;
+}
+/* line 292, ../scss/css/shortcode.scss */
+a.buttons.gray {
+  background: url("button-image/sprite-button.png") no-repeat 0 -200px;
+  float: left;
+  color: #848484;
+  text-shadow: 0px 1px 0px #e1dfdf;
+}
+/* line 297, ../scss/css/shortcode.scss */
+a.buttons.gray:hover {
+  background-position: 0 -240px;
+}
+/* line 301, ../scss/css/shortcode.scss */
+a.buttons.green {
+  background: url("button-image/sprite-button.png") no-repeat 0 -280px;
+  float: left;
+  color: #2b8f31;
+  text-shadow: 0px 1px 0px #8ed293;
+}
+/* line 306, ../scss/css/shortcode.scss */
+a.buttons.green:hover {
+  background-position: 0 -320px;
+}
+/* line 310, ../scss/css/shortcode.scss */
+a.buttons.yellow {
+  background: url("button-image/sprite-button.png") no-repeat 0 -363px;
+  float: left;
+  color: #827c07;
+  text-shadow: 0px 1px 0px #d0cc77;
+}
+/* line 315, ../scss/css/shortcode.scss */
+a.buttons.yellow:hover {
+  background-position: 0 -404px;
+}
+
+/**CUSTOMIZED BUTTONS**/

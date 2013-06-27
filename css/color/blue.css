@@ -1,0 +1,216 @@
+/* line 1, ../../scss/css/color/blue.scss */
+.menu_wrapper {
+  background: #034c81;
+}
+
+/* line 7, ../../scss/css/color/blue.scss */
+#menu li a {
+  color: #bcd5e7;
+  text-shadow: 0 1px 1px #04406b;
+}
+/* line 11, ../../scss/css/color/blue.scss */
+#menu li.current-menu-item a, #menu li.current_page_item a, #menu li.current-menu-parent a, #menu li.current_page_parent a {
+  background: url(images/menutipblue.png) bottom center no-repeat;
+}
+/* line 15, ../../scss/css/color/blue.scss */
+#menu li a.selected, #menu li a:hover {
+  background: url(images/menutipblue.png) bottom center no-repeat;
+}
+/* line 19, ../../scss/css/color/blue.scss */
+#menu li li a {
+  color: #cbb0f1;
+}
+/* line 21, ../../scss/css/color/blue.scss */
+#menu li li a.selected, #menu li li a:hover {
+  color: #cbb0f1;
+}
+/* line 27, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li > ul {
+  background: #034c81;
+}
+/* line 29, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li > ul li > ul {
+  background: #034c81;
+}
+/* line 35, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li li a:link, #menu .ddsmoothmenu li li a:visited {
+  color: #fff;
+  background: url(images/menusep-blue.png) bottom repeat-x;
+}
+/* line 41, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li li:last-child a:link, #menu .ddsmoothmenu li li:last-child a:visited {
+  background: none;
+}
+/* line 45, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li li a {
+  background: url(images/menusep-blue.png) bottom repeat-x;
+}
+/* line 47, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li li a.selected, #menu .ddsmoothmenu li li a:hover {
+  color: #bcd5e7;
+  background: url(images/menusep-blue.png) bottom repeat-x;
+}
+/* line 55, ../../scss/css/color/blue.scss */
+#menu li.current-menu-parent a, #menu li.current_page_parent a {
+  color: #fff;
+}
+/* line 59, ../../scss/css/color/blue.scss */
+#menu li a.selected, #menu li a:hover {
+  color: #fff;
+}
+/* line 64, ../../scss/css/color/blue.scss */
+#menu .ddsmoothmenu li li, #menu li.current_page_item a {
+  color: #fff;
+}
+
+/*top search
+====================================================*/
+/* Slider 
+==========================================*/
+/* line 75, ../../scss/css/color/blue.scss */
+.slider-wrapper {
+  border-bottom: 1px solid #146cac;
+}
+
+/* #Slider Style Flexslider
+================================================== */
+/* Direction Nav */
+/* line 85, ../../scss/css/color/blue.scss */
+.flex-direction-nav li a {
+  background: #515156;
+  color: #fafafa;
+}
+/* line 88, ../../scss/css/color/blue.scss */
+.flex-direction-nav li a:hover {
+  background: #146cac !important;
+}
+/* line 92, ../../scss/css/color/blue.scss */
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 101, ../../scss/css/color/blue.scss */
+.flex-control-nav li a {
+  background: url(images/spblue.png) no-repeat;
+}
+
+/*Feature Content
+================================================*/
+/* line 108, ../../scss/css/color/blue.scss */
+.feature-content h1 a:hover {
+  color: #146cac;
+}
+
+/* line 113, ../../scss/css/color/blue.scss */
+.feature-content-inner .circle {
+  background: #309ae3;
+}
+/* line 115, ../../scss/css/color/blue.scss */
+.feature-content-inner .circle img {
+  background: #309ae3;
+}
+/* line 117, ../../scss/css/color/blue.scss */
+.feature-content-inner .circle img:hover {
+  color: #bcd5e7;
+}
+/* line 122, ../../scss/css/color/blue.scss */
+.feature-content-inner .read-more {
+  background: url(images/readmoreblue.png) center no-repeat;
+}
+
+/* line 127, ../../scss/css/color/blue.scss */
+.feature-content .read-more:hover {
+  color: #bcd5e7;
+}
+
+/*Feature-post
+==================================================*/
+/* line 134, ../../scss/css/color/blue.scss */
+.feature-post .feature-post-inner h1 a:hover {
+  color: #146cac;
+}
+
+/* #testimonial slider
+================================================== */
+/* line 141, ../../scss/css/color/blue.scss */
+.testimonial .pagination li a {
+  background-image: url(images/tpblue.png);
+}
+
+/* line 146, ../../scss/css/color/blue.scss */
+#slides_testimonial .next, #slides_testimonial .prev {
+  background: #515156;
+}
+/* line 149, ../../scss/css/color/blue.scss */
+#slides_testimonial .next:hover, #slides_testimonial .prev:hover {
+  background: #146cac !important;
+}
+
+/*sinupform 
+====================================================*/
+/* line 158, ../../scss/css/color/blue.scss */
+.signupform input[type="text"]:focus {
+  border: 1px solid #146cac;
+}
+/* line 161, ../../scss/css/color/blue.scss */
+.signupform input[type="submit"]:hover {
+  border: solid 1px #146cac;
+}
+
+/*Blog Page
+===================================================*/
+/* line 170, ../../scss/css/color/blue.scss */
+.content-bar .post .post_title a:hover {
+  color: #146cac;
+}
+/* line 173, ../../scss/css/color/blue.scss */
+.content-bar .post .post_content .read_more {
+  color: #146cac;
+}
+/* line 175, ../../scss/css/color/blue.scss */
+.content-bar .post .post_content .read_more:hover {
+  opacity: 0.5;
+  color: #146cac;
+}
+/* line 181, ../../scss/css/color/blue.scss */
+.content-bar .post .post_meta a {
+  color: #146cac;
+}
+/* line 183, ../../scss/css/color/blue.scss */
+.content-bar .post .post_meta a:hover {
+  opacity: 0.5;
+  color: #146cac;
+}
+/* line 188, ../../scss/css/color/blue.scss */
+.content-bar .post .post_meta .post_comment a {
+  color: #146cac;
+}
+
+/*Sidebar 
+====================================================*/
+/* line 197, ../../scss/css/color/blue.scss */
+.sidebar ul li a:hover {
+  color: #146cac;
+}
+
+/*Footer 
+================================================*/
+/* line 206, ../../scss/css/color/blue.scss */
+.footer .widget_inner .sitelink a {
+  color: #c8d8e4;
+}
+/* line 208, ../../scss/css/color/blue.scss */
+.footer .widget_inner .sitelink a:hover {
+  color: #146cac;
+}
+/* line 212, ../../scss/css/color/blue.scss */
+.footer .widget_inner a:hover {
+  color: #146cac;
+}
+/* line 216, ../../scss/css/color/blue.scss */
+.footer ul li a:hover {
+  color: #146cac;
+}

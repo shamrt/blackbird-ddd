@@ -1,0 +1,3599 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+/*
+Theme Name: BlackBird-DDD
+Theme URI: http://www.inkthemes.com/wp-themes/blackbird-responsive-wordpress-theme/
+Description: Blackbird-DDD is derived from the free Blackbird Lite theme; it shares some elements --- specifically on the front-page --- but it ultimately an altogether different theme.
+Author: Shane Martin
+Author URI: http://sha.nemart.in
+Version: 1.1.6
+License: GNU General Public License
+License URI: license.txt
+Tags:two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+*/
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+/* 1. 24 Column Grid 0px - Infinity 
+----------------------------------------------------------------------------- 
+
+  Span 1:    3.20833333333%
+  Span 2:    7.41666666667%
+  Span 3:    11.625%
+  Span 4:    15.8333333333%
+  Span 5:    20.0416666667%
+  Span 6:    24.25%
+  Span 7:    28.4583333333%
+  Span 8:    32.6666666667%
+  Span 9:    36.875%
+  Span 10:    41.0833333333%
+  Span 11:    45.2916666667%
+  Span 12:    49.5%
+  Span 13:    53.7083333333%
+  Span 14:    57.9166666667%
+  Span 15:    62.125%
+  Span 16:    66.3333333333%
+  Span 17:    70.5416666667%
+  Span 18:    74.75%
+  Span 19:    78.9583333333%
+  Span 20:    83.1666666667%
+  Span 21:    87.375%
+  Span 22:    91.5833333333%
+  Span 23:    95.7916666667%
+  Span 24:    100%
+
+/* --- Gridpak variables ---*/
+/*----------------------------------------------------------------------------- */
+/* Reusable column setup */
+/* line 59, scss/_grid.scss */
+.col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+}
+
+@media screen and (min-width: 0px) {
+  /* line 80, scss/_grid.scss */
+  .page {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  /* line 85, scss/_grid.scss */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+  }
+
+  /* line 91, scss/_grid.scss */
+  .col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+  }
+
+  /* line 97, scss/_grid.scss */
+  .row .col:first-child {
+    margin-left: 0;
+  }
+
+  /*
+  Add your semantic classnames in alongside their corresponding spans here. e.g.
+  
+  .grid_3,
+  .my_semantic_class_name {
+      ...
+  }
+  
+  */
+  /* line 111, scss/_grid.scss */
+  .grid_1 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 3.20833%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 114, scss/_grid.scss */
+  .grid_2 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 7.41667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 117, scss/_grid.scss */
+  .grid_3 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 11.625%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 120, scss/_grid.scss */
+  .grid_4 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 15.83333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 123, scss/_grid.scss */
+  .grid_5 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 20.04167%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 126, scss/_grid.scss */
+  .grid_6 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 24.25%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 129, scss/_grid.scss */
+  .grid_7, .sidebar {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 28.45833%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 132, scss/_grid.scss */
+  .grid_8 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 32.66667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 135, scss/_grid.scss */
+  .grid_9 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 36.875%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 138, scss/_grid.scss */
+  .grid_10 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 41.08333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 141, scss/_grid.scss */
+  .grid_11 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 45.29167%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 144, scss/_grid.scss */
+  .grid_12 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 49.5%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 147, scss/_grid.scss */
+  .grid_13 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 53.70833%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 150, scss/_grid.scss */
+  .grid_14 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 57.91667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 153, scss/_grid.scss */
+  .grid_15 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 62.125%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 156, scss/_grid.scss */
+  .grid_16 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 66.33333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 159, scss/_grid.scss */
+  .grid_17, .content-bar {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 70.54167%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 162, scss/_grid.scss */
+  .grid_18 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 74.75%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 165, scss/_grid.scss */
+  .grid_19 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 78.95833%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 168, scss/_grid.scss */
+  .grid_20 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 83.16667%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 171, scss/_grid.scss */
+  .grid_21 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 87.375%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 174, scss/_grid.scss */
+  .grid_22 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 91.58333%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 177, scss/_grid.scss */
+  .grid_23 {
+    border: 0px solid rgba(0, 0, 0, 0);
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
+    background-clip: padding-box !important;
+    width: 95.79167%;
+    border-left-width: 0;
+    padding: 0 0.5%;
+    margin-left: 1%;
+  }
+
+  /* line 180, scss/_grid.scss */
+  .grid_24 {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+/* line 3, scss/_base.scss */
+body {
+  font-family: "Trebuchet MS";
+  font-size: 13px;
+  color: #717273;
+}
+
+/* line 9, scss/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #122432;
+  font-family: "Poiret One";
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+/* line 16, scss/_base.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 20, scss/_base.scss */
+h2 {
+  font-size: 22px;
+}
+
+/* line 24, scss/_base.scss */
+h3 {
+  font-size: 20px;
+}
+
+/* line 28, scss/_base.scss */
+h4 {
+  font-size: 18px;
+}
+
+/* line 32, scss/_base.scss */
+h5 {
+  font-size: 16px;
+}
+
+/* line 36, scss/_base.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 40, scss/_base.scss */
+p {
+  margin: 0 0 1.5em;
+}
+
+/* line 44, scss/_base.scss */
+a {
+  text-decoration: none;
+  color: #4d4c4c;
+}
+/* line 47, scss/_base.scss */
+a img {
+  border: none;
+}
+
+/* line 52, scss/_base.scss */
+:focus {
+  outline: none;
+}
+
+/* line 56, scss/_base.scss */
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*Fullwidth Page
+================================================== */
+/* line 63, scss/_base.scss */
+.fullwidth {
+  background: #fff;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+/* line 67, scss/_base.scss */
+.fullwidth h1 {
+  color: #040404;
+  text-shadow: 1px 0 0 #fff;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 76, scss/_base.scss */
+.fullwidth h2, .fullwidth h3, .fullwidth h4, .fullwidth h5, .fullwidth h6 {
+  color: #040404;
+  text-shadow: 1px 0 0 #fff;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* #Special Columns
+================================================== */
+/* line 90, scss/_base.scss */
+pre {
+  margin: 10px 0px 40px 0px;
+  padding: 0 10px 0px 10px;
+  display: block;
+  clear: both;
+  background: #cccccc url("images/codebg.jpg");
+  line-height: 20px;
+  font-size: 11px;
+  border: 1px solid #cfcfcf;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* line 104, scss/_base.scss */
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth {
+  float: left;
+  position: relative;
+}
+
+/* line 109, scss/_base.scss */
+.one_third {
+  width: 30%;
+  margin-right: 5%;
+}
+
+/* line 114, scss/_base.scss */
+.one_half {
+  width: 48%;
+  margin-right: 4%;
+}
+
+/* line 119, scss/_base.scss */
+.one_third {
+  width: 30%;
+  margin-right: 5%;
+}
+
+/* line 124, scss/_base.scss */
+.two_third {
+  width: 65%;
+  margin-right: 5%;
+}
+
+/* line 129, scss/_base.scss */
+.one_fourth {
+  width: 22%;
+  margin-right: 4%;
+}
+
+/* line 134, scss/_base.scss */
+.three_fourth {
+  width: 74%;
+  margin-right: 4%;
+}
+
+/* line 139, scss/_base.scss */
+.col2, .col3, .col4 {
+  float: left;
+  position: relative;
+}
+
+/* line 144, scss/_base.scss */
+.col3 {
+  width: 280px;
+  margin-right: 60px;
+}
+
+/* line 149, scss/_base.scss */
+.col2 {
+  width: 460px;
+  margin-right: 40px;
+}
+
+/* line 154, scss/_base.scss */
+.col4 {
+  width: 210px;
+  margin-right: 40px;
+}
+
+/* line 159, scss/_base.scss */
+.last {
+  margin-right: 0 !important;
+}
+
+/*Menu Style
+=================================*/
+/* line 4, scss/_nav.scss */
+.menu_wrapper {
+  background: #f7f3f2;
+  clear: both;
+  margin: 0 1%;
+  min-height: 50px;
+}
+
+/* line 14, scss/_nav.scss */
+#main-nav {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  width: 66.33333%;
+  border-left-width: 0;
+  padding: 0 0.5%;
+  margin-left: 1%;
+  margin-left: 0;
+}
+
+/* line 19, scss/_nav.scss */
+#menu {
+  position: relative;
+  z-index: 999;
+  margin-left: -10px;
+  margin-bottom: 0px;
+}
+/* line 24, scss/_nav.scss */
+#menu li {
+  list-style-type: none;
+  margin-left: 0;
+  margin-bottom: 0px;
+}
+/* line 29, scss/_nav.scss */
+#menu li a {
+  font-size: 15px;
+  line-height: 23px;
+  font-family: 'Abel', sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 14px 10px 14px 10px;
+  position: relative;
+  float: left;
+  color: #404040;
+  text-align: center;
+  /*    font-weight:bold;*/
+  text-decoration: none;
+  text-shadow: 0 1px 1px #e4d6d2;
+  margin-bottom: 0;
+}
+/* line 49, scss/_nav.scss */
+#menu li.current-menu-item a, #menu li.current_page_item a, #menu li.current-menu-parent a, #menu li.current_page_parent a {
+  margin: 0;
+  color: #fff;
+}
+/* line 55, scss/_nav.scss */
+#menu li a.selected, #menu li a:hover {
+  margin: 0;
+  color: #794a4d;
+}
+/* line 61, scss/_nav.scss */
+#menu li.current-menu-item a {
+  color: #794a4d;
+}
+/* line 65, scss/_nav.scss */
+#menu li li a {
+  background-color: #5d393b;
+  color: #794a4d;
+}
+/* line 68, scss/_nav.scss */
+#menu li li a.selected, #menu li li a:hover {
+  background-color: #5d393b;
+  color: #794a4d;
+}
+/* line 73, scss/_nav.scss */
+#menu li.current-menu-item a:hover, #menu li.current-menu-parent a:hover, #menu li.current_page_parent a:hover, #menu li a:hover.selected {
+  text-decoration: none;
+  /*background-image:none;*/
+}
+/* line 80, scss/_nav.scss */
+#menu .ddsmoothmenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 7px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+/* line 89, scss/_nav.scss */
+#menu .ddsmoothmenu li {
+  margin: 0 !important;
+  position: relative;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+  color: #794a4d;
+}
+/* line 90, scss/_nav.scss */
+#menu .ddsmoothmenu li > ul {
+  margin-left: 3px;
+  position: absolute;
+  left: 0;
+  display: none;
+  visibility: hidden;
+  border-radius: 5px;
+  margin-top: -5px;
+  background: #343434;
+}
+/* line 99, scss/_nav.scss */
+#menu .ddsmoothmenu li > ul li > ul {
+  margin-top: 1px;
+  margin-left: 0;
+}
+/* line 110, scss/_nav.scss */
+#menu .ddsmoothmenu li li {
+  font-size: 12px;
+  text-transform: capitalize;
+  margin: 10px;
+  padding: 0px 0;
+  color: #5d393b;
+}
+/* line 116, scss/_nav.scss */
+#menu .ddsmoothmenu li li a {
+  width: 140px;
+  height: auto;
+  float: none;
+  display: block;
+  text-align: left;
+  text-shadow: none;
+  margin: 0;
+  padding: 8px 18px;
+  text-decoration: none;
+  position: relative;
+  font-size: 13px;
+  background: url(images/menusep.png) bottom repeat-x;
+}
+/* line 129, scss/_nav.scss */
+#menu .ddsmoothmenu li li a:after {
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 137, scss/_nav.scss */
+#menu .ddsmoothmenu li li li li:last-child a {
+  border-top: none;
+  background-image: none;
+}
+/* line 140, scss/_nav.scss */
+#menu .ddsmoothmenu li li li li:last-child a:after {
+  border-top: none;
+  background-image: none;
+}
+/* line 145, scss/_nav.scss */
+#menu .ddsmoothmenu li li:last-child a:after {
+  width: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+  color: #000;
+  background: none;
+  background-image: none;
+}
+
+/* line 161, scss/_nav.scss */
+* html #menu .ddsmoothmenu li li a {
+  display: inline-block;
+}
+
+/* line 167, scss/_nav.scss */
+#menu .ddsmoothmenu li li a:link, #menu .ddsmoothmenu li li a:visited {
+  color: #794a4d;
+}
+/* line 170, scss/_nav.scss */
+#menu .ddsmoothmenu li li a.selected, #menu .ddsmoothmenu li li a:hover {
+  color: #ddd;
+}
+/* line 174, scss/_nav.scss */
+#menu .ddsmoothmenu li ul li {
+  display: list-item;
+  float: none;
+}
+/* line 177, scss/_nav.scss */
+#menu .ddsmoothmenu li ul li ul {
+  margin-top: 0px;
+  padding-top: 0;
+  color: #5d393b;
+  top: 0;
+}
+/* line 182, scss/_nav.scss */
+#menu .ddsmoothmenu li ul li ul li {
+  margin-top: -2px;
+}
+
+/* line 189, scss/_nav.scss */
+* html .ddsmoothmenu {
+  height: 1%;
+}
+
+/* line 193, scss/_nav.scss */
+.downarrowclass {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  display: none !important;
+}
+
+/* line 204, scss/_nav.scss */
+.rightarrowclass {
+  display: block;
+  width: 5px;
+  height: 7px;
+  position: absolute;
+  margin-top: -3px;
+  top: 50%;
+  right: 8px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+/* line 216, scss/_nav.scss */
+.ddshadow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+/* ---- menu ---- */
+/* line 230, scss/_nav.scss */
+#menu li.current-menu-parent a, #menu li.current_page_parent a {
+  color: #794a4d;
+}
+/* line 234, scss/_nav.scss */
+#menu li a.selected, #menu li a:hover {
+  color: #794a4d;
+}
+/* line 241, scss/_nav.scss */
+#menu li.current-menu-item a:hover, #menu li.current-menu-parent a:hover, #menu li.current_page_parent a:hover,
+#menu li a:hover.selected {
+  color: #794a4d;
+}
+/* line 246, scss/_nav.scss */
+#menu .ddsmoothmenu li li,
+#menu li.current_page_item a {
+  color: #794a4d;
+}
+/* line 249, scss/_nav.scss */
+#menu .ddsmoothmenu li li:last-child a {
+  background: none;
+}
+
+/*=======================================================*/
+/* Responsive Dropdown Menu Style */
+/*=======================================================*/
+/* line 260, scss/_nav.scss */
+.mobile-menu {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 12px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+/* line 269, scss/_nav.scss */
+.it_mobile_menu li {
+  margin: 0;
+}
+/* line 271, scss/_nav.scss */
+.it_mobile_menu li a {
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-shadow: none;
+  border-bottom: 1px solid #e2e0e0;
+  margin: 0 !important;
+}
+/* line 279, scss/_nav.scss */
+.it_mobile_menu li:last-child a {
+  border-bottom: none;
+  padding-bottom: 15px;
+}
+/* line 283, scss/_nav.scss */
+.it_mobile_menu li a:hover {
+  color: #2565ac;
+}
+/* line 287, scss/_nav.scss */
+.it_mobile_menu > li.current_page_item > a {
+  color: #2565ac;
+}
+
+/* line 292, scss/_nav.scss */
+#mobile_menu {
+  width: 318px;
+  border: 1px solid #e2e0e0 !important;
+  left: -1px;
+  padding: 0;
+  padding-bottom: 20px;
+  background: #f8f8f8;
+  top: 30px !important;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -webkit-border-top-right-radius: 0px;
+  z-index: 9999px;
+  list-style: none;
+}
+/* line 311, scss/_nav.scss */
+#mobile_menu ul {
+  list-style: none;
+}
+
+/* line 316, scss/_nav.scss */
+.it_mobile_menu {
+  position: absolute;
+  top: 46px !important;
+  left: 3px;
+  z-index: 1000;
+  display: none;
+  text-align: left;
+}
+/* line 323, scss/_nav.scss */
+.it_mobile_menu ul {
+  display: block !important;
+  visibility: visible !important;
+  border-bottom: 1px solid #e2e0e0;
+}
+/* line 328, scss/_nav.scss */
+.it_mobile_menu ul li a {
+  margin-left: 12px !important;
+  padding-top: 12px !important;
+  padding-bottom: 4px !important;
+}
+/* line 333, scss/_nav.scss */
+.it_mobile_menu ul li:last-child a {
+  padding-bottom: 10px !important;
+}
+/* line 337, scss/_nav.scss */
+.it_mobile_menu ul a {
+  border-bottom: none;
+}
+
+/* line 343, scss/_nav.scss */
+.mobile_nav {
+  color: #3B3B3B;
+  display: none;
+  background: #f8f8f8;
+  border: 1px solid #e2e0e0;
+  position: relative;
+  padding: 15px 22px 11px 46px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 250px;
+}
+/* line 355, scss/_nav.scss */
+.mobile_nav:before, .mobile_nav:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+}
+/* line 362, scss/_nav.scss */
+.mobile_nav:before {
+  left: 0;
+}
+/* line 365, scss/_nav.scss */
+.mobile_nav:after {
+  right: 0;
+}
+/* line 368, scss/_nav.scss */
+.mobile_nav:hover {
+  text-decoration: none;
+  color: #3B3B3B;
+}
+/* line 372, scss/_nav.scss */
+.mobile_nav > span {
+  display: block;
+  width: 15px;
+  height: 10px;
+  background: url(images/responsive_arrow.png) no-repeat;
+  position: absolute;
+  top: 19px;
+  left: 63px;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 385, scss/_nav.scss */
+.mobile_nav.opened > span {
+  -moz-transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+/* Slider 
+==========================================*/
+/* line 242, scss/plugins/_flexslider.scss */
+.slider-wrapper {
+  clear: both;
+  font-weight: normal;
+  padding-top: 27px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #5d393b;
+}
+
+/* Flexslider
+================================================== */
+/* line 254, scss/plugins/_flexslider.scss */
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
+  outline: none;
+}
+
+/* line 258, scss/plugins/_flexslider.scss */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 264, scss/plugins/_flexslider.scss */
+.slides, .flex-control-nav {
+  overflow: hidden;
+}
+
+/*      FlexSlider Necessary Styles  */
+/* line 270, scss/plugins/_flexslider.scss */
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 275, scss/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+/* line 279, scss/plugins/_flexslider.scss */
+.flexslider .slides img {
+  display: block;
+  width: 100%;
+}
+
+/* line 288, scss/plugins/_flexslider.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* line 292, scss/plugins/_flexslider.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 301, scss/plugins/_flexslider.scss */
+html[xmlns] .slides {
+  display: block;
+}
+
+/* line 305, scss/plugins/_flexslider.scss */
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 313, scss/plugins/_flexslider.scss */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/*      FlexSlider Styling  */
+/* line 319, scss/plugins/_flexslider.scss */
+.flexslider {
+  background: transparent;
+  position: relative;
+  zoom: 1;
+  margin: 0 0 20px;
+}
+/* line 324, scss/plugins/_flexslider.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+/* line 326, scss/plugins/_flexslider.scss */
+.flexslider .slides > li {
+  position: relative;
+}
+
+/* line 332, scss/plugins/_flexslider.scss */
+.flex-container {
+  zoom: 1;
+  position: relative;
+}
+
+/* Caption style */
+/* line 339, scss/plugins/_flexslider.scss */
+.flex-caption {
+  background: url(images/cap-bg.png) repeat;
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #fafafa;
+  font-size: 13px;
+  line-height: 18px;
+  width: 306px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* line 353, scss/plugins/_flexslider.scss */
+.flex-caption a.flex-read {
+  color: #fff;
+}
+/* line 355, scss/plugins/_flexslider.scss */
+.flex-caption a.flex-read:hover {
+  color: #FFFF00;
+}
+/* line 359, scss/plugins/_flexslider.scss */
+.flex-caption h1 {
+  margin-bottom: 10px;
+  width: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+/* line 365, scss/plugins/_flexslider.scss */
+.flex-caption h1 a {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+/* line 372, scss/plugins/_flexslider.scss */
+.flex-caption p {
+  width: 200px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #868686;
+  font-size: 13px;
+  font-family: "Trebuchet MS";
+}
+
+/* line 382, scss/plugins/_flexslider.scss */
+.caption {
+  /*background:#211916;
+  border-radius:10px;*/
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  color: #fafafa;
+  font-size: 13px;
+  line-height: 18px;
+  /*max-width: 55%;*/
+  width: 308px;
+  height: 194px;
+}
+
+/* Direction Nav */
+/* line 400, scss/plugins/_flexslider.scss */
+.flex-direction-nav {
+  height: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 160px;
+}
+/* line 406, scss/plugins/_flexslider.scss */
+.flex-direction-nav li a {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  cursor: pointer;
+  background: #515156;
+  color: #fafafa;
+  font-family: Trebuchet, Helvetica, sans-serif;
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-decoration: none !important;
+}
+/* line 420, scss/plugins/_flexslider.scss */
+.flex-direction-nav li a:hover {
+  background: #f7d705 !important;
+}
+/* line 424, scss/plugins/_flexslider.scss */
+.flex-direction-nav li .next {
+  right: 0;
+}
+/* line 427, scss/plugins/_flexslider.scss */
+.flex-direction-nav li .prev {
+  right: 30px;
+}
+/* line 430, scss/plugins/_flexslider.scss */
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 440, scss/plugins/_flexslider.scss */
+.flex-control-nav {
+  position: absolute;
+  bottom: 30px;
+  text-align: right;
+  right: 42px;
+  text-indent: 9999px;
+}
+/* line 446, scss/plugins/_flexslider.scss */
+.flex-control-nav li {
+  margin: 2px 0 2px 5px;
+  zoom: 1;
+  display: block;
+}
+/* line 450, scss/plugins/_flexslider.scss */
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+/* line 453, scss/plugins/_flexslider.scss */
+.flex-control-nav li a {
+  width: 15px !important;
+  height: 18px;
+  background: url(images/pagination.png) no-repeat;
+  cursor: pointer;
+  display: inline-block;
+}
+/* line 459, scss/plugins/_flexslider.scss */
+.flex-control-nav li a:hover {
+  background-position: 0 -18px;
+}
+/* line 462, scss/plugins/_flexslider.scss */
+.flex-control-nav li a.active {
+  background-position: 0px -18px;
+  cursor: default;
+}
+
+/*content
+=============================================*/
+/* line 6, scss/_front-page.scss */
+.content {
+  overflow: hidden;
+  margin-top: 15px;
+  padding: 0 10px;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+/* line 12, scss/_front-page.scss */
+.content h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #12222f;
+  line-height: 45px;
+  font-weight: normal;
+}
+
+/* Feature Content
+================================================*/
+/* line 25, scss/_front-page.scss */
+.feature-content {
+  overflow: hidden;
+  *zoom: 1;
+  text-align: center;
+  margin-top: 40px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* line 33, scss/_front-page.scss */
+h1.ftitle {
+  font-size: 26px;
+  color: #404040;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* line 40, scss/_front-page.scss */
+.feature-content .circle-content {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+/* line 45, scss/_front-page.scss */
+.feature-content-inner {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  width: 32.66667%;
+  border-left-width: 0;
+  padding: 0 0.5%;
+  margin-left: 1%;
+  text-align: center;
+}
+/* line 49, scss/_front-page.scss */
+.feature-content-inner.one {
+  margin-left: 0;
+}
+/* line 53, scss/_front-page.scss */
+.feature-content-inner h1 {
+  font-size: 26px;
+  color: #404040;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 59, scss/_front-page.scss */
+.feature-content-inner h1 a:hover {
+  color: #404040;
+}
+/* line 63, scss/_front-page.scss */
+.feature-content-inner p {
+  color: #717273;
+  font-size: 13px;
+  padding: 0 10px;
+  text-align: center;
+}
+/* line 70, scss/_front-page.scss */
+.feature-content-inner .circle {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  width: 152px;
+  height: 148px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #5d393b;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+/* line 84, scss/_front-page.scss */
+.feature-content-inner .circle img {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+  width: 142px;
+  height: 138px;
+  background: #5d393b;
+  margin: 5px;
+  text-align: center;
+}
+/* line 93, scss/_front-page.scss */
+.feature-content-inner .circle img:hover {
+  opacity: 0.5;
+  color: #5d393b;
+}
+/* line 100, scss/_front-page.scss */
+.feature-content-inner .read-more {
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+  background: #5d393b;
+  width: 80%;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  margin: 25px auto;
+  display: block;
+}
+/* line 113, scss/_front-page.scss */
+.feature-content-inner .read-more:hover {
+  opacity: 0.5;
+  color: #b07f81;
+}
+
+/*contact page
+=======================================================*/
+/* line 4, scss/_pages.scss */
+.contact-page {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 8, scss/_pages.scss */
+.contact-page h1 {
+  color: #333333;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+/* line 16, scss/_pages.scss */
+#contactForm .error {
+  color: red;
+  float: left;
+}
+/* line 20, scss/_pages.scss */
+#contactForm input {
+  margin-bottom: 10px;
+}
+
+/* line 26, scss/_pages.scss */
+.contactform textarea, .contactform label {
+  margin-bottom: 10px;
+}
+
+/* line 32, scss/_pages.scss */
+#contactForm input[type="text"], #contactForm textarea {
+  float: left;
+  background-color: #f9f3e6;
+  padding: 0 5px;
+  clear: both;
+  border: none;
+}
+/* line 39, scss/_pages.scss */
+#contactForm input[type="text"] {
+  height: 36px;
+  border: solid 1px #e2dbcd;
+  width: 60%;
+}
+/* line 44, scss/_pages.scss */
+#contactForm label {
+  float: left;
+  clear: both;
+  font-size: 14px;
+  padding-top: 3px;
+}
+/* line 50, scss/_pages.scss */
+#contactForm input[type="submit"] {
+  clear: both;
+  width: 125px;
+  height: 33px;
+  float: left;
+  background: #a39476;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  padding-bottom: 2px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Trebuchet MS";
+}
+/* line 66, scss/_pages.scss */
+#contactForm input[type="submit"]:hover {
+  color: #5d393b;
+  text-shadow: none;
+  opacity: 0.5;
+}
+/* line 72, scss/_pages.scss */
+#contactForm textarea {
+  height: 200px;
+  width: 96%;
+  border: solid 1px #e2dbcd;
+}
+/* line 77, scss/_pages.scss */
+#contactForm input[type="text"]:focus, #contactForm textarea:focus {
+  background: #fff;
+  border: 1px solid #2e1c1d;
+}
+
+/* line 83, scss/_pages.scss */
+.contact-page {
+  padding-left: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+/* line 87, scss/_pages.scss */
+.contact-page p {
+  color: #4f4e4e;
+  margin-bottom: 50px;
+}
+
+/* line 94, scss/_pages.scss */
+.content_bg .sidebar .contact-info span {
+  color: #576f21;
+}
+/* line 97, scss/_pages.scss */
+.content_bg .sidebar .contact-info p {
+  margin: 10px 0;
+}
+
+/* #Wordpress Core Classes
+================================================== */
+/* line 4, scss/_wordpress.scss */
+blockquote {
+  padding-left: 60px;
+  min-height: 40px;
+  background: url(images/blockqoute.png) no-repeat;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 10, scss/_wordpress.scss */
+blockquote img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 16, scss/_wordpress.scss */
+.gallery-caption {
+  color: #666;
+  font-family: Georgia, serif;
+  font-size: 12px;
+}
+
+/* line 22, scss/_wordpress.scss */
+.alignnone {
+  margin: 5px 20px 20px 0;
+  display: block;
+  clear: both;
+}
+
+/* line 28, scss/_wordpress.scss */
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 33, scss/_wordpress.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 38, scss/_wordpress.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 43, scss/_wordpress.scss */
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 49, scss/_wordpress.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+/* line 53, scss/_wordpress.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+/* line 56, scss/_wordpress.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+/* line 60, scss/_wordpress.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 67, scss/_wordpress.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  text-align: center;
+  padding: 8px 3px 10px;
+}
+/* line 73, scss/_wordpress.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+/* line 76, scss/_wordpress.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  max-width: 98.5%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+/* line 84, scss/_wordpress.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 8px 4px 5px;
+}
+
+/*Calendar style*/
+/* line 94, scss/_wordpress.scss */
+#wp-calendar {
+  color: #555;
+  width: 95%;
+  text-align: center;
+  color: fff;
+}
+/* line 95, scss/_wordpress.scss */
+#wp-calendar caption {
+  text-align: center;
+  background: #4b5d67;
+  color: #fff;
+  border-bottom: 2px solid #e6eef7;
+}
+/* line 105, scss/_wordpress.scss */
+#wp-calendar a {
+  color: #000;
+}
+
+/* line 111, scss/_wordpress.scss */
+.footer #wp-calendar tfoot a {
+  color: #000;
+}
+/* line 114, scss/_wordpress.scss */
+.footer #wp-calendar a {
+  color: #fff;
+}
+
+/* line 120, scss/_wordpress.scss */
+#wp-calendar caption, #wp-calendar td, #wp-calendar th {
+  text-align: center;
+}
+/* line 123, scss/_wordpress.scss */
+#wp-calendar caption {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 0 3px 0;
+  text-transform: uppercase;
+}
+/* line 129, scss/_wordpress.scss */
+#wp-calendar th {
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+/* line 137, scss/_wordpress.scss */
+.footer #wp-calendar th {
+  background: #e0e0e0;
+}
+
+/* line 141, scss/_wordpress.scss */
+#wp-calendar tfoot td {
+  background: #f4f4f4;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+}
+
+/* line 148, scss/_wordpress.scss */
+.footer #wp-calendar tbody td {
+  color: #fff;
+}
+
+/* line 152, scss/_wordpress.scss */
+#wp-calendar tbody td {
+  color: c0c0c0;
+}
+
+/* line 156, scss/_wordpress.scss */
+#calendar_wrap {
+  display: block;
+  margin-bottom: 30px;
+}
+
+/*feature post news in blog
+=============================================*/
+/* line 164, scss/_wordpress.scss */
+.feature-post {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 33px;
+  max-width: 100%;
+  width: 980px;
+}
+/* line 170, scss/_wordpress.scss */
+.feature-post h1 {
+  font-size: 21px;
+  line-height: 22px;
+  color: #122432;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  background: url(images/titlebg.png) center repeat-x;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+/* line 180, scss/_wordpress.scss */
+.feature-post .titlebg {
+  background-image: none;
+  background: none;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 187, scss/_wordpress.scss */
+.feature-post .feature-box {
+  float: left;
+  width: 180px;
+  margin-right: 12px;
+}
+/* line 191, scss/_wordpress.scss */
+.feature-post .feature-box:last-child {
+  margin-right: 0;
+}
+/* line 196, scss/_wordpress.scss */
+.feature-post .feature-post-inner img {
+  padding: 5px;
+  border: solid 1px #ddddde;
+}
+/* line 200, scss/_wordpress.scss */
+.feature-post .feature-post-inner h1 {
+  font-size: 21px;
+  color: #122432;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  background-color: #fff;
+  background-image: none;
+}
+/* line 207, scss/_wordpress.scss */
+.feature-post .feature-post-inner h1 a:hover {
+  color: #f8ca23;
+}
+
+/* line 214, scss/_wordpress.scss */
+h1.title {
+  background: url(images/titlebg.png) center repeat-x;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+/*signup
+=============================================*/
+/* line 224, scss/_wordpress.scss */
+.signup {
+  max-width: 100%;
+  height: auto;
+}
+/* line 227, scss/_wordpress.scss */
+.signup h1 {
+  background: url(images/titlebg.png) center repeat-x;
+  margin-top: 33px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+/* line 233, scss/_wordpress.scss */
+.signup .titlebg {
+  background-image: none;
+  background: none;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+/* line 243, scss/_wordpress.scss */
+.signuparea {
+  margin-bottom: 33px;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  max-width: 100%;
+  height: auto;
+}
+/* line 252, scss/_wordpress.scss */
+.signuparea .signup-content {
+  height: auto;
+  padding-top: 25px;
+  color: #555;
+  font-size: 13px;
+  background-color: #fff;
+  border: solid 1px #e2e1e1;
+  border-radius: 4px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25px;
+}
+
+/* line 267, scss/_wordpress.scss */
+.signup-content .signupinfo {
+  background: url(images/quotes.png) no-repeat left top;
+  height: auto;
+  max-width: 400px;
+  padding-left: 55px;
+  margin-left: 15px;
+  float: left;
+}
+/* line 275, scss/_wordpress.scss */
+.signup-content .signuplogin {
+  margin-left: 25px;
+  max-width: 400px;
+  float: left;
+  border-left: solid 1px #d7d7d7;
+  padding-left: 55px;
+  padding-right: 35px;
+  vertical-align: middle;
+  min-height: 55px;
+}
+/* line 284, scss/_wordpress.scss */
+.signup-content .signuplogin .signupform {
+  margin-top: 10px;
+}
+
+/* line 291, scss/_wordpress.scss */
+.signupform input[type="text"] {
+  border: solid 1px #d7d7d7;
+  font-size: 12px;
+  color: #999;
+  height: 28px;
+  width: 200px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: url(images/email.png) 5px 10px no-repeat;
+  padding-left: 25px;
+}
+/* line 301, scss/_wordpress.scss */
+.signupform input[type="text"]:focus {
+  border: 1px solid #FFCC66;
+}
+/* line 305, scss/_wordpress.scss */
+.signupform input[type="submit"] {
+  background: url(images/submitbtn.png) no-repeat;
+  width: 67px;
+  height: 30px;
+  border: none;
+  border: solid 1px #d7d7d7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #999;
+}
+/* line 315, scss/_wordpress.scss */
+.signupform input[type="submit"]:hover {
+  color: #d7d7d7;
+}
+
+/*Gallery page
+================================================*/
+/* line 327, scss/_wordpress.scss */
+.gallery h1.page-title {
+  margin-bottom: 22px;
+  margin-top: 10px;
+  border-bottom: solid 1px #e8e7e7;
+  padding-bottom: 15px;
+  max-width: 100%;
+}
+/* line 333, scss/_wordpress.scss */
+.gallery h1.page-title a:hover {
+  color: #5d393b;
+}
+/* line 337, scss/_wordpress.scss */
+.gallery span.viewall {
+  color: #5d393b;
+}
+/* line 340, scss/_wordpress.scss */
+.gallery .zoom {
+  width: 20px;
+  height: 18px;
+  background: url(images/zoom.png) 0 5px no-repeat;
+  padding-left: 25px;
+}
+/* line 346, scss/_wordpress.scss */
+.gallery .thumbnail {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-left: -15px;
+  padding: 0px;
+  max-width: 970px;
+  padding-top: 20px;
+}
+/* line 354, scss/_wordpress.scss */
+.gallery .thumbnail li {
+  margin: 0px;
+  float: left;
+  background: none;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  border: solid 1ox #0000FF;
+}
+/* line 361, scss/_wordpress.scss */
+.gallery .thumbnail li img {
+  height: 242px;
+  width: 215px;
+  border: 5px solid #dad1bf;
+}
+/* line 365, scss/_wordpress.scss */
+.gallery .thumbnail li img:hover {
+  border: 5px solid #5d393b;
+}
+/* line 371, scss/_wordpress.scss */
+.gallery ul.thumbnail li {
+  color: #5c5445;
+  font-size: 22px;
+  background-color: #dad1bf;
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* line 377, scss/_wordpress.scss */
+.gallery ul.thumbnail li a:hover {
+  color: #5d393b;
+}
+
+/*-----------------------------------------------------*/
+/* Commentlist Style*/
+/*-----------------------------------------------------*/
+/* line 388, scss/_wordpress.scss */
+#commentsbox {
+  margin: 0;
+}
+
+/* line 392, scss/_wordpress.scss */
+ol.commentlist {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 397, scss/_wordpress.scss */
+ol.commentlist li.comment {
+  line-height: 18px;
+  margin: 5px 0 15px;
+  padding: 10px;
+  margin-right: 0;
+  overflow: hidden;
+  padding-right: 0;
+}
+/* line 404, scss/_wordpress.scss */
+ol.commentlist li.comment .comment-body {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 4px solid #eaeaea;
+  background-color: #fafafa;
+  margin-bottom: 30px;
+  margin-left: 75px;
+}
+/* line 415, scss/_wordpress.scss */
+ol.commentlist li.comment .comment-author a:link, ol.commentlist li.comment .comment-author a:visited {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+/* line 424, scss/_wordpress.scss */
+cite.fn {
+  color: #141413;
+  font-style: normal;
+}
+
+/* line 430, scss/_wordpress.scss */
+ol.commentlist li.comment .comment-author .avatar {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  left: -85px;
+  top: 0px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #D5D5D5;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+/* line 446, scss/_wordpress.scss */
+ol.commentlist li.comment .comment-meta a {
+  color: #5d5d5c;
+  text-decoration: none !important;
+}
+/* line 450, scss/_wordpress.scss */
+ol.commentlist li.comment p {
+  line-height: 22px;
+  margin-top: 5px;
+  color: #6b6d6b;
+  margin-bottom: 40px;
+}
+/* line 457, scss/_wordpress.scss */
+ol.commentlist li.comment ul.children li.depth-2, ol.commentlist li.comment ul.children li.depth-3, ol.commentlist li.comment ul.children li.depth-4, ol.commentlist li.comment ul.children li.depth-5 {
+  margin: 0 0 0px 50px;
+}
+
+/* line 463, scss/_wordpress.scss */
+.comment-meta.commentmetadata {
+  margin-top: 10px;
+}
+
+/* line 468, scss/_wordpress.scss */
+ol.commentlist li.comment ul li, ol.commentlist li.comment ol li {
+  margin: 0 0 0 25px;
+}
+/* line 471, scss/_wordpress.scss */
+ol.commentlist li.comment dt {
+  font-weight: bold;
+  padding: 0 0 5px;
+}
+/* line 475, scss/_wordpress.scss */
+ol.commentlist li.comment .reply {
+  position: absolute;
+  left: 20px;
+  bottom: -15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* line 482, scss/_wordpress.scss */
+ol.commentlist li.comment .reply a {
+  cursor: pointer;
+  color: 6c6c6c;
+  padding: 5px 15px;
+  text-indent: -99999px;
+}
+/* line 489, scss/_wordpress.scss */
+ol.commentlist li.comment a.comment-reply-link {
+  width: 103px;
+  height: 40px;
+  padding: 20px 35px;
+  background: url(images/reply.png) no-repeat;
+  text-indent: 99999px;
+  color: #fff;
+  font-size: 0;
+}
+/* line 498, scss/_wordpress.scss */
+ol.commentlist li.comment ul.children {
+  list-style: none;
+  text-indent: 0;
+  margin: 1em 0 0;
+}
+
+/* line 505, scss/_wordpress.scss */
+.comment-nav {
+  height: 20px;
+  padding: 5px;
+}
+/* line 509, scss/_wordpress.scss */
+.comment-nav a:link, .comment-nav a:visited {
+  color: #f96e02;
+}
+
+/* line 515, scss/_wordpress.scss */
+#respond {
+  padding: 0px 0px;
+  margin: 10px 0px;
+}
+/* line 519, scss/_wordpress.scss */
+#respond h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+}
+/* line 526, scss/_wordpress.scss */
+#respond label {
+  display: block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  color: #9b9494;
+}
+/* line 533, scss/_wordpress.scss */
+#respond label small {
+  font-size: 10px;
+}
+/* line 536, scss/_wordpress.scss */
+#respond input {
+  border: none;
+  color: #989898;
+  background: #000;
+  font-size: 13px;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+}
+/* line 544, scss/_wordpress.scss */
+#respond .required {
+  display: none;
+}
+
+/* line 549, scss/_wordpress.scss */
+#commentform {
+  margin-bottom: 50px;
+}
+/* line 551, scss/_wordpress.scss */
+#commentform p {
+  color: #444;
+}
+/* line 554, scss/_wordpress.scss */
+#commentform a {
+  color: #0454A8;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* Commentform Style
+-------------------------------------------------------*/
+/* line 564, scss/_wordpress.scss */
+#commentform input[type="text"] {
+  width: 80%;
+  background: #faf9fa url(images/text-areastrip.png) top repeat-x;
+  height: 20px;
+  border: none;
+  padding: 5px 0;
+  border: 1px solid #d9dada;
+}
+/* line 571, scss/_wordpress.scss */
+#commentform input[type="text"]:focus {
+  background: #fff;
+  border: 1px solid #FFCC66;
+}
+
+/* line 577, scss/_wordpress.scss */
+textarea#comment:focus {
+  background: #fff;
+  border: 1px solid #FFCC66;
+}
+
+/* line 582, scss/_wordpress.scss */
+input#commentSubmit {
+  border: none;
+  color: #fff;
+  margin-top: 25px;
+  background: #000;
+  width: 115px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+/* line 593, scss/_wordpress.scss */
+input#commentSubmit:hover {
+  opacity: 0.5;
+}
+
+/* line 598, scss/_wordpress.scss */
+textarea#comment {
+  border: 1px solid #d9dada;
+  width: 97%;
+  background: #faf9fa url(images/text-areastrip.png) top repeat-x;
+  height: 235px;
+  padding: 5px 5px;
+  color: #555;
+  clear: both;
+}
+
+/* line 608, scss/_wordpress.scss */
+#nav-single {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* line 613, scss/_wordpress.scss */
+.nav-previous {
+  float: left;
+  width: 50%;
+}
+
+/* line 618, scss/_wordpress.scss */
+.nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*page heading
+==============================*/
+/* line 628, scss/_wordpress.scss */
+.page-heading h1 {
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+  border-bottom: 1px solid #cdcdcd;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+
+/* line 638, scss/_wordpress.scss */
+h1.post_title.single {
+  font-size: 30px;
+  line-height: 28px;
+  padding-bottom: 20px;
+  text-shadow: 0 1px 1px #fff;
+  padding-top: 20px;
+  width: 630px;
+}
+
+/* line 647, scss/_wordpress.scss */
+.page-heading h1 span {
+  width: 630px !important;
+}
+
+/*Blog Page
+===================================================*/
+/* line 655, scss/_wordpress.scss */
+.page-content {
+  padding-bottom: 30px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* line 661, scss/_wordpress.scss */
+.content-bar {
+  margin-left: 0;
+  padding-top: 20px;
+}
+/* line 665, scss/_wordpress.scss */
+.content-bar .post {
+  position: relative;
+}
+/* line 668, scss/_wordpress.scss */
+.content-bar img {
+  max-width: 630px;
+  height: auto;
+}
+/* line 672, scss/_wordpress.scss */
+.content-bar .post .post_title {
+  padding-top: 0;
+  margin-top: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+
+/* line 682, scss/_wordpress.scss */
+.content-bar .post .post_content {
+  overflow: hidden;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 19px;
+  color: #717273;
+}
+/* line 689, scss/_wordpress.scss */
+.content-bar .post_content .tag, .content-bar .post_content .page-link {
+  margin: 15px 0 0;
+}
+/* line 694, scss/_wordpress.scss */
+.content-bar .post .post_content img.postimg {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 9px;
+  border: solid 1px #ddddde;
+  max-width: 100%;
+}
+/* line 701, scss/_wordpress.scss */
+.content-bar .post.single .post_content img {
+  max-width: 100%;
+  height: auto;
+  background: none;
+  padding: 0;
+}
+
+/* line 714, scss/_wordpress.scss */
+.content-bar .post .post_title,
+.search .post_title,
+.archive .post_title {
+  padding-top: 0;
+  margin-top: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+/* line 721, scss/_wordpress.scss */
+.content-bar .post .post_title a,
+.search .post_title a,
+.archive .post_title a {
+  color: #404040;
+  font-size: 30px;
+  line-height: 30px;
+}
+/* line 725, scss/_wordpress.scss */
+.content-bar .post .post_title a:hover,
+.search .post_title a:hover,
+.archive .post_title a:hover {
+  color: #5d393b;
+}
+/* line 731, scss/_wordpress.scss */
+.content-bar .post .post_content .read_more,
+.search .post_content .read_more,
+.archive .post_content .read_more {
+  display: block;
+  color: #c5a809;
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* line 737, scss/_wordpress.scss */
+.content-bar .post .post_content .read_more:hover,
+.search .post_content .read_more:hover,
+.archive .post_content .read_more:hover {
+  opacity: 0.5;
+  color: #794a4d;
+}
+/* line 743, scss/_wordpress.scss */
+.content-bar .post .post_meta,
+.search .post_meta,
+.archive .post_meta {
+  list-style-type: none;
+  color: #7e7d7d;
+  padding-top: 0px;
+  border-top: 1px dashed #eeeeee;
+  border-bottom: dashed 1px #eeeeee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 752, scss/_wordpress.scss */
+.content-bar .post .post_meta span,
+.search .post_meta span,
+.archive .post_meta span {
+  color: #7e7d7d;
+}
+/* line 756, scss/_wordpress.scss */
+.content-bar .post .post_meta a,
+.search .post_meta a,
+.archive .post_meta a {
+  color: #5d393b;
+}
+/* line 758, scss/_wordpress.scss */
+.content-bar .post .post_meta a:hover,
+.search .post_meta a:hover,
+.archive .post_meta a:hover {
+  opacity: 0.5;
+  color: #f8ca23;
+}
+/* line 764, scss/_wordpress.scss */
+.content-bar .post .post_meta li,
+.search .post_meta li,
+.archive .post_meta li {
+  display: inline;
+  margin-right: 10px;
+}
+/* line 769, scss/_wordpress.scss */
+.content-bar .post .post_meta .post_comment,
+.search .post_meta .post_comment,
+.archive .post_meta .post_comment {
+  float: right;
+  text-align: center;
+}
+/* line 772, scss/_wordpress.scss */
+.content-bar .post .post_meta .post_comment a,
+.search .post_meta .post_comment a,
+.archive .post_meta .post_comment a {
+  color: #5d393b;
+}
+
+/* Top Search 
+=======================================*/
+/* line 4, scss/_searchform.scss */
+.top-search {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  width: 32.66667%;
+  border-left-width: 0;
+  padding: 0 0.5%;
+  margin-left: 1%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 30px;
+  margin-bottom: 0px;
+}
+/* line 12, scss/_searchform.scss */
+.top-search .searchform {
+  background-color: #fff;
+  width: 235px;
+  height: 30px;
+  border: none;
+  border: 1px solid #ede4e2;
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/* line 24, scss/_searchform.scss */
+.top-search .searchform input[type="text"] {
+  width: 200px;
+  height: 29px;
+  background: transparent;
+  border: none;
+  padding: 1px 0px 0px 7px;
+  color: #343434;
+}
+/* line 32, scss/_searchform.scss */
+.top-search .searchform input[type="submit"] {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+  background: url(images/search.png) no-repeat;
+  width: 18px;
+  height: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Search Form
+=======================================*/
+/* line 51, scss/_searchform.scss */
+.searchform {
+  background: #f7f7f8;
+  width: 97%;
+  border: 1px solid #dfdddd;
+  position: relative;
+  margin-bottom: 0px;
+}
+/* line 59, scss/_searchform.scss */
+.searchform input[type="text"] {
+  /*width:272px;*/
+  width: 97%;
+  height: 36px;
+  /*height:34px;*/
+  background-color: #f8f8f8;
+  border: none;
+  padding: 1px 0px 0px 7px;
+  color: #666;
+}
+/* line 69, scss/_searchform.scss */
+.searchform input[type="submit"] {
+  position: absolute;
+  right: -15px;
+  top: 12px;
+  background: url(images/search.png) no-repeat;
+  width: 35px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 82, scss/_searchform.scss */
+.content-bar .searchform {
+  background: #f7f7f8;
+  width: 240px;
+  border: 1px solid #dfdddd;
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+/* line 91, scss/_searchform.scss */
+.content-bar .searchform input[type="text"] {
+  /*width:272px;*/
+  width: 210px;
+  height: 36px;
+  /*height:34px;*/
+  background-color: #f8f8f8;
+  border: none;
+  padding: 1px 0px 0px 7px;
+  color: #666;
+}
+/* line 101, scss/_searchform.scss */
+.content-bar .searchform input[type="submit"] {
+  position: absolute;
+  right: -15px;
+  top: 12px;
+  background: url(images/search.png) no-repeat;
+  width: 35px;
+  height: 34px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 114, scss/_searchform.scss */
+.side-search input[type="text"] {
+  width: 272px;
+  height: 36px;
+  background-color: #f8f8f8;
+  border: solid 1px #dddbdb;
+  padding-left: 10px;
+  color: #c8c6c6;
+  font-family: "Trebuchet MS";
+}
+/* line 122, scss/_searchform.scss */
+.side-search input[type="text"]:focus {
+  border: solid 1px #f8ca23;
+}
+
+/* line 32, scss/style.scss */
+.header {
+  max-width: 100%;
+}
+/* line 35, scss/style.scss */
+.header #logo {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+  line-height: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+/* line 42, scss/style.scss */
+.header #logo a, .header #logo a:hover {
+  border: none;
+  display: block;
+}
+/* line 47, scss/style.scss */
+.header #logo img {
+  max-width: 100%;
+}
+/* line 51, scss/style.scss */
+.header #logo .sh_bottom {
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  z-index: -2;
+  bottom: 0;
+  right: 0;
+}
+
+/*testimonial
+=============================================*/
+/* line 80, scss/style.scss */
+.testimonial {
+  color: #717273;
+  font-size: 13px;
+  margin: 0;
+  max-width: 100%;
+  margin-bottom: 65px;
+}
+/* line 86, scss/style.scss */
+.testimonial h1 {
+  font-size: 21px;
+  color: #122432;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  background: url(images/titlebg.png) center repeat-x;
+  margin-bottom: 33px;
+  text-align: center;
+}
+/* line 95, scss/style.scss */
+.testimonial .titlebg {
+  background-image: none;
+  background: none;
+  background-color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 102, scss/style.scss */
+.testimonial .slides_container {
+  /*width:950px;*/
+  max-width: 100%;
+}
+/* line 105, scss/style.scss */
+.testimonial .slides_container div.slide {
+  width: 950px;
+}
+/* line 109, scss/style.scss */
+.testimonial .item {
+  width: 950px;
+  margin: 0 0px;
+}
+/* line 112, scss/style.scss */
+.testimonial .item p {
+  color: #999;
+  text-align: center;
+}
+/* line 117, scss/style.scss */
+.testimonial .pagination {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 80px;
+}
+/* line 122, scss/style.scss */
+.testimonial .pagination li {
+  display: inline;
+  margin: 0 3px;
+  list-style: none;
+}
+/* line 126, scss/style.scss */
+.testimonial .pagination li a {
+  display: inline-block;
+  width: 10px;
+  height: 0;
+  padding-top: 10px;
+  background-image: url(images/pagination22.png);
+  background-position: 0 0;
+  overflow: hidden;
+}
+/* line 135, scss/style.scss */
+.testimonial .pagination li.current a {
+  background-position: 0 -12px;
+}
+
+/* #testimonial slider
+================================================== */
+/* line 146, scss/style.scss */
+#slides_testimonial .prev {
+  cursor: pointer;
+  background: #515156;
+  height: 20px;
+  width: 40px;
+  color: #fafafa;
+  margin: 0 2px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  float: right;
+}
+/* line 158, scss/style.scss */
+#slides_testimonial .next {
+  cursor: pointer;
+  background: #515156;
+  height: 20px;
+  width: 40px;
+  color: #fafafa;
+  margin: 0 2px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  float: right;
+}
+/* line 169, scss/style.scss */
+#slides_testimonial .next:hover {
+  background: #f7d705 !important;
+}
+/* line 173, scss/style.scss */
+#slides_testimonial .prev:hover {
+  background: #f7d705 !important;
+}
+
+/*Sidebar 
+====================================================*/
+/* line 182, scss/style.scss */
+.sidebar {
+  padding-left: 25px;
+  padding-top: 40px;
+}
+/* line 187, scss/style.scss */
+.sidebar h3 {
+  border-bottom: 1px dashed #d5d5d8;
+  padding-bottom: 12px;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 22px;
+}
+/* line 195, scss/style.scss */
+.sidebar p {
+  text-align: left;
+}
+/* line 198, scss/style.scss */
+.sidebar ul {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+/* line 203, scss/style.scss */
+.sidebar ul li {
+  margin-left: 0;
+  padding: 5px 0;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+}
+/* line 209, scss/style.scss */
+.sidebar ul li li {
+  margin-left: 15px;
+}
+/* line 213, scss/style.scss */
+.sidebar ul li a {
+  color: #7b7b7b;
+  font-size: 14px;
+  font-family: "Trebuchet MS";
+}
+/* line 217, scss/style.scss */
+.sidebar ul li a:hover {
+  color: #5d393b;
+}
+/* line 225, scss/style.scss */
+.sidebar li.twidget {
+  border-bottom: 1px dashed #d5d5d8;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* line 230, scss/style.scss */
+.sidebar li span.twidgetlink {
+  color: #5d393b;
+}
+
+/*Footer 
+================================================*/
+/* line 241, scss/style.scss */
+.footer-wrapper {
+  background-color: #404040;
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 247, scss/style.scss */
+.footer {
+  background: #404040;
+  padding: 20px 1%;
+  overflow: hidden;
+}
+/* line 253, scss/style.scss */
+.footer .widget_inner {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  width: 24.25%;
+  border-left-width: 0;
+  padding: 0 0.5%;
+  margin-left: 1%;
+  color: #8c8c8c;
+}
+/* line 258, scss/style.scss */
+.footer .widget_inner.first {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  width: 49.5%;
+  border-left-width: 0;
+  padding: 0 0.5%;
+  margin-left: 1%;
+  margin-left: 0;
+}
+/* line 263, scss/style.scss */
+.footer .widget_inner.last {
+  overflow: hidden;
+  padding-right: 18px;
+}
+/* line 268, scss/style.scss */
+.footer .widget_inner .sitelink a {
+  color: #8c8c8c;
+  margin-top: 25px;
+  display: block;
+}
+/* line 272, scss/style.scss */
+.footer .widget_inner .sitelink a:hover {
+  color: #794a4d;
+}
+/* line 277, scss/style.scss */
+.footer .widget_inner a {
+  color: #8c8c8c;
+}
+/* line 279, scss/style.scss */
+.footer .widget_inner a:hover {
+  color: #5d393b;
+}
+/* line 284, scss/style.scss */
+.footer .widget_inner h1, .footer .widget_inner h2, .footer .widget_inner h3, .footer .widget_inner h4, .footer .widget_inner h5, .footer .widget_inner h6 {
+  color: #fff;
+  font-size: 26px;
+  padding-bottom: 12px;
+}
+/* line 290, scss/style.scss */
+.footer .widget_inner ul {
+  list-style: none;
+}
+/* line 292, scss/style.scss */
+.footer .widget_inner ul li {
+  margin-left: 0px;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Trebuchet MS";
+  padding-bottom: 10px;
+}
+/* line 298, scss/style.scss */
+.footer .widget_inner ul li li {
+  padding: 2px 0 2px 10px;
+}
+/* line 301, scss/style.scss */
+.footer .widget_inner ul li a {
+  color: #8c8c8c;
+}
+/* line 303, scss/style.scss */
+.footer .widget_inner ul li a:hover {
+  color: #794a4d;
+}
+/* line 309, scss/style.scss */
+.footer .widget_inner ul.social-links {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 313, scss/style.scss */
+.footer .widget_inner ul.social-links li {
+  margin: 0;
+}
+/* line 315, scss/style.scss */
+.footer .widget_inner ul.social-links li a {
+  margin: 0 10px 0 0;
+}
+
+/* line 325, scss/style.scss */
+.footer_bottom {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #000;
+  padding: 0 1%;
+}
+/* line 331, scss/style.scss */
+.footer_bottom .footer_bottom_inner span.copyright {
+  float: right;
+  color: #9f9e9e;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 337, scss/style.scss */
+.footer_bottom .footer_bottom_inner span.blog-desc {
+  float: left;
+  color: #4d4c4c;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Responsive styling
+=============================================*/
+/* Media screen */
+@media only screen and (max-width: 960px) {
+  /* line 1, scss/_960down.scss */
+  #main-nav {
+    width: auto;
+  }
+
+  /* line 5, scss/_960down.scss */
+  .top-search {
+    height: 0px;
+    margin-bottom: 0px;
+  }
+  /* line 9, scss/_960down.scss */
+  .top-search .searchform {
+    display: none;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-left: 35px;
+    width: 25%;
+    background-color: #343434;
+  }
+
+  /* line 21, scss/_960down.scss */
+  h1.post_title.single {
+    width: 505px;
+  }
+
+  /* Flexslider
+  ================================================== */
+  /* line 29, scss/_960down.scss */
+  .flexslider .slides img {
+    display: block;
+  }
+
+  /* Feature content
+  ================================================== */
+  /* line 39, scss/_960down.scss */
+  .feature-content {
+    text-align: center;
+  }
+
+  /* line 44, scss/_960down.scss */
+  .testimonial .slides_container {
+    max-width: 760px;
+  }
+  /* line 46, scss/_960down.scss */
+  .testimonial .slides_container div.slide {
+    max-width: 760px;
+  }
+  /* line 50, scss/_960down.scss */
+  .testimonial .item {
+    max-width: 760px;
+    margin: 0 0px;
+  }
+
+  /* line 62, scss/_960down.scss */
+  .feature-post .feature-box {
+    margin-bottom: 35px;
+    overflow: hidden;
+    margin-right: 30px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* line 70, scss/_960down.scss */
+  .signuparea .signup-content {
+    height: auto;
+  }
+
+  /* line 74, scss/_960down.scss */
+  .signup-content .signupinfo {
+    margin-left: 140px;
+  }
+  /* line 77, scss/_960down.scss */
+  .signup-content .signuplogin {
+    margin-top: 15px;
+    border-left: none;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: 175px;
+    margin-bottom: 20px;
+  }
+  /* line 84, scss/_960down.scss */
+  .signup-content .signuplogin .signupform {
+    margin-right: 0;
+  }
+
+  /* line 90, scss/_960down.scss */
+  .signupform input[type="text"] {
+    margin-left: 5px;
+  }
+  /* line 93, scss/_960down.scss */
+  .signupform input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+  /* line 99, scss/_960down.scss */
+  .content-bar .post .post_content img.postimg {
+    max-width: 93%;
+  }
+  /* line 102, scss/_960down.scss */
+  .content-bar img {
+    max-width: 498px;
+    height: auto;
+  }
+
+  /*Footer 
+  ================================================*/
+}
+@media only screen and (max-width: 767px) {
+  /* Header
+  =================================*/
+  /* line 18, scss/_767down.scss */
+  .header-info {
+    text-align: center;
+    padding-right: 40px;
+  }
+
+  /* line 23, scss/_767down.scss */
+  .header .logo {
+    text-align: center;
+    margin: 40px 0 21px 0px;
+  }
+
+  /* Menu
+  =================================*/
+  /* line 36, scss/_767down.scss */
+  #main-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 41, scss/_767down.scss */
+  #menu {
+    display: none;
+  }
+
+  /* line 45, scss/_767down.scss */
+  #mobile_menu {
+    width: 318px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* line 51, scss/_767down.scss */
+  .mobile_nav {
+    width: 250px;
+    margin: 4px auto 0;
+  }
+
+  /* line 56, scss/_767down.scss */
+  .it_mobile_menu a {
+    display: block;
+    padding-left: 0px;
+    color: #3B3B3B;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  /* line 64, scss/_767down.scss */
+  .ddsmoothmenu .sub-menu {
+    margin-left: 100px !important;
+    visibility: hidden;
+  }
+  /* line 67, scss/_767down.scss */
+  .ddsmoothmenu .sub-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 200px !important;
+    clear: both;
+    left: 20px;
+  }
+
+  /* line 76, scss/_767down.scss */
+  .mobile_nav {
+    display: inline-block;
+    text-shadow: 1px 1px 0 #fff;
+  }
+
+  /* line 81, scss/_767down.scss */
+  .ddsmoothmenu {
+    text-align: center;
+  }
+
+  /* line 84, scss/_767down.scss */
+  li.depth-4 ul.children {
+    padding-left: 0;
+  }
+
+  /* line 88, scss/_767down.scss */
+  #menu li {
+    float: none !important;
+  }
+
+  /* Flexslider
+  ================================================== */
+  /* line 97, scss/_767down.scss */
+  .slider-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  /* line 102, scss/_767down.scss */
+  .flexslider .slides img {
+    display: block;
+  }
+
+  /* line 107, scss/_767down.scss */
+  .flexslider {
+    margin-top: 5px;
+  }
+
+  /* line 110, scss/_767down.scss */
+  .flex-caption {
+    background-image: none;
+    display: none;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  /* line 118, scss/_767down.scss */
+  .flex-direction-nav {
+    height: 0;
+    position: absolute;
+    top: 245px;
+    right: 225px;
+    border: solid 1px #FF0000;
+    display: none;
+  }
+
+  /* Control Nav */
+  /* line 127, scss/_767down.scss */
+  .flex-control-nav {
+    position: absolute;
+    bottom: 60px;
+    text-align: right;
+    right: 20px;
+    text-indent: 9999px;
+  }
+  /* line 133, scss/_767down.scss */
+  .flex-control-nav li {
+    margin: 0 0 0 5px;
+    zoom: 1;
+    display: block;
+  }
+  /* line 137, scss/_767down.scss */
+  .flex-control-nav li:first-child {
+    margin: 0;
+  }
+  /* line 140, scss/_767down.scss */
+  .flex-control-nav li a {
+    width: 15px;
+    height: 20px;
+    background: url(images/pagination.png) no-repeat;
+    cursor: pointer;
+    display: inline-block;
+  }
+  /* line 146, scss/_767down.scss */
+  .flex-control-nav li a:hover {
+    background-position: 0 -20px;
+  }
+  /* line 149, scss/_767down.scss */
+  .flex-control-nav li a.active {
+    background-position: 0px -20px;
+    cursor: default;
+  }
+
+  /* line 158, scss/_767down.scss */
+  .testimonial .slides_container {
+    width: 468px;
+  }
+  /* line 160, scss/_767down.scss */
+  .testimonial .slides_container div.slide {
+    width: 468px;
+  }
+  /* line 164, scss/_767down.scss */
+  .testimonial .item {
+    width: 468px;
+    margin: 0 0px;
+  }
+
+  /* line 170, scss/_767down.scss */
+  .top-search .searchform input[type="text"] {
+    width: 235px;
+  }
+
+  /* Feature Content
+  ================================================*/
+  /* line 178, scss/_767down.scss */
+  .feature-content-inner {
+    float: none;
+    max-width: 300px;
+    min-width: 60%;
+  }
+
+  /* line 184, scss/_767down.scss */
+  .feature-content {
+    /* margin:0 auto;
+     padding-left:15px;*/
+    text-align: center;
+  }
+  /* line 189, scss/_767down.scss */
+  .feature-content .feature-content-inner {
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+  /* line 195, scss/_767down.scss */
+  .feature-content .feature-content-inner p {
+    margin-bottom: 25px;
+  }
+  /* line 198, scss/_767down.scss */
+  .feature-content .feature-content-inner .readmore {
+    margin-left: 40px;
+  }
+
+  /* Wordpress
+  ================================================*/
+  /* line 208, scss/_767down.scss */
+  .content-bar {
+    float: none;
+    width: auto;
+  }
+  /* line 212, scss/_767down.scss */
+  .content-bar img {
+    max-width: 470px;
+    height: auto;
+  }
+  /* line 217, scss/_767down.scss */
+  .content-bar .post .post_content img.postimg {
+    max-width: 93%;
+  }
+
+  /* line 222, scss/_767down.scss */
+  .sidebar {
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-top: 40px;
+    max-width: 100%;
+  }
+
+  /* line 230, scss/_767down.scss */
+  .feature-post .feature-box {
+    margin-bottom: 10px;
+    overflow: hidden;
+    margin-right: 30px;
+    float: none;
+    display: compact;
+    padding-bottom: 0px;
+    width: 180px;
+    margin-left: 145px;
+  }
+  /* line 239, scss/_767down.scss */
+  .feature-post .feature-box p {
+    margin-bottom: 25px;
+  }
+
+  /* line 244, scss/_767down.scss */
+  .signuparea .signup-content {
+    height: auto;
+  }
+
+  /* line 249, scss/_767down.scss */
+  .signup-content .signupinfo {
+    margin-right: 20px;
+  }
+  /* line 252, scss/_767down.scss */
+  .signup-content .signuplogin {
+    margin-top: 25px;
+    border-left: none;
+    margin-left: 20px;
+  }
+  /* line 256, scss/_767down.scss */
+  .signup-content .signuplogin .signupform {
+    margin-right: 90px;
+  }
+
+  /* line 263, scss/_767down.scss */
+  .signupform input[type="text"] {
+    margin-left: 15px;
+  }
+  /* line 266, scss/_767down.scss */
+  .signupform input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+
+  /* line 273, scss/_767down.scss */
+  h1.post_title.single {
+    width: 471px;
+    text-align: center;
+  }
+
+  /* Footer 
+  ================================================*/
+  /* line 282, scss/_767down.scss */
+  .footer {
+    background: #404040;
+    padding: 20px 1%;
+    overflow: hidden;
+  }
+  /* line 288, scss/_767down.scss */
+  .footer .widget_inner {
+    width: auto;
+    padding: 0 2%;
+    color: #8c8c8c;
+  }
+  /* line 295, scss/_767down.scss */
+  .footer .widget_inner.first {
+    width: auto;
+    padding: 0 2%;
+  }
+  /* line 300, scss/_767down.scss */
+  .footer .widget_inner.last {
+    overflow: hidden;
+    padding-right: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* Header
+  =================================*/
+  /* line 4, scss/_480down.scss */
+  .top-search {
+    height: 4px;
+    margin-bottom: 0px;
+  }
+  /* line 8, scss/_480down.scss */
+  .top-search .searchform {
+    margin-top: 30px;
+    padding-right: 10px;
+    margin-left: 0;
+    width: 96%;
+    float: left;
+  }
+  /* line 15, scss/_480down.scss */
+  .top-search .searchform input[type="text"] {
+    width: 280px;
+  }
+
+  /* line 21, scss/_480down.scss */
+  .logo {
+    /*margin: auto 0;
+    padding-left:30px;*/
+    text-align: center;
+  }
+
+  /* line 27, scss/_480down.scss */
+  .header-info {
+    text-align: center;
+    padding-left: 25px;
+  }
+
+  /* Menu
+  =================================*/
+  /* line 36, scss/_480down.scss */
+  #main-nav {
+    display: block;
+  }
+
+  /* line 42, scss/_480down.scss */
+  #mobile_menu {
+    width: 280px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* line 48, scss/_480down.scss */
+  .mobile_nav {
+    width: 210px;
+  }
+  /* line 53, scss/_480down.scss */
+  .mobile_nav > span {
+    position: absolute;
+    top: 19px;
+    left: 40px;
+  }
+
+  /* line 60, scss/_480down.scss */
+  .mobile-menu {
+    margin-right: 30px;
+  }
+
+  /* Flexslider
+  ================================================== */
+  /* line 68, scss/_480down.scss */
+  .flexslider .slides img {
+    display: block;
+  }
+
+  /* line 73, scss/_480down.scss */
+  .slider-wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  /* line 77, scss/_480down.scss */
+  .flexslider {
+    margin-top: 5px;
+  }
+
+  /* line 80, scss/_480down.scss */
+  .flex-caption {
+    display: none;
+  }
+
+  /* line 83, scss/_480down.scss */
+  .flex-direction-nav {
+    height: 0;
+    position: absolute;
+    top: 175px;
+    right: 120px;
+    border: solid 1px #FF0000;
+    display: none;
+  }
+
+  /* Control Nav */
+  /* line 93, scss/_480down.scss */
+  .flex-control-nav {
+    position: absolute;
+    bottom: 15px;
+    text-align: right;
+    right: 20px;
+    text-indent: 9999px;
+  }
+  /* line 99, scss/_480down.scss */
+  .flex-control-nav li {
+    margin: 0 0 0 5px;
+    zoom: 1;
+    display: block;
+  }
+  /* line 103, scss/_480down.scss */
+  .flex-control-nav li:first-child {
+    margin: 0;
+  }
+  /* line 106, scss/_480down.scss */
+  .flex-control-nav li a {
+    width: 15px;
+    height: 20px;
+    background: url(images/pagination.png) no-repeat;
+    cursor: pointer;
+    display: inline-block;
+  }
+  /* line 112, scss/_480down.scss */
+  .flex-control-nav li a:hover {
+    background-position: 0 -20px;
+  }
+  /* line 115, scss/_480down.scss */
+  .flex-control-nav li a.active {
+    background-position: 0px -20px;
+    cursor: default;
+  }
+
+  /* Feature Content
+  ================================================*/
+  /* line 127, scss/_480down.scss */
+  .feature-content {
+    /* margin:0 auto;
+     padding-left:15px;*/
+    text-align: center;
+  }
+  /* line 132, scss/_480down.scss */
+  .feature-content .feature-content-inner {
+    float: none;
+    max-width: 300px;
+    min-width: 70%;
+  }
+  /* line 137, scss/_480down.scss */
+  .feature-content .feature-content-inner .readmore {
+    margin-left: 40px;
+  }
+
+  /* Feature pages
+  ================================================*/
+  /* line 148, scss/_480down.scss */
+  .testimonial .slides_container {
+    width: 290px;
+    height: auto;
+  }
+  /* line 151, scss/_480down.scss */
+  .testimonial .slides_container div.slide {
+    width: 290px;
+    height: auto;
+  }
+  /* line 156, scss/_480down.scss */
+  .testimonial .item {
+    width: 290px;
+    height: auto;
+    margin: 0 0px;
+  }
+
+  /* line 163, scss/_480down.scss */
+  .feature-post .feature-box {
+    margin: 0 auto;
+    max-width: 180px;
+    margin-left: 50px;
+  }
+
+  /* line 168, scss/_480down.scss */
+  .signuparea .signup-content {
+    height: auto;
+  }
+
+  /* line 172, scss/_480down.scss */
+  .signup-content .signupinfo {
+    margin-right: 20px;
+  }
+  /* line 175, scss/_480down.scss */
+  .signup-content .signuplogin {
+    margin-top: 45px;
+    border-left: none;
+    margin-left: 10px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+  }
+  /* line 183, scss/_480down.scss */
+  .signup-content .signuplogin .signupform {
+    margin-left: 0;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  /* line 191, scss/_480down.scss */
+  .signupform input[type="text"] {
+    width: 135px;
+  }
+  /* line 194, scss/_480down.scss */
+  .signupform input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  /* line 199, scss/_480down.scss */
+  .sidebar {
+    padding-left: 0;
+    padding-top: 40px;
+    max-width: 100%;
+  }
+
+  /* line 204, scss/_480down.scss */
+  .content-bar .post .post_content img.postimg {
+    max-width: 93%;
+  }
+
+  /* line 207, scss/_480down.scss */
+  h1.post_title.single {
+    width: 292px;
+    text-align: center;
+  }
+
+  /* line 211, scss/_480down.scss */
+  .content-bar img {
+    max-width: 292px;
+    height: auto;
+  }
+}

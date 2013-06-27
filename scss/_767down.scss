@@ -1,0 +1,305 @@
+/* Header
+=================================*/
+
+// .top-search {
+//   height: 4px;
+//   margin-bottom: 0px;
+
+//   .searchform {
+//     display: none;
+//     margin-top: 30px;
+//     padding-right: 10px;
+//     margin-left: 80px;
+//     width: 50%;
+//     float: left;
+//   }
+// }
+
+.header-info {
+  text-align: center;
+  padding-right: 40px;
+}
+
+.header .logo {
+  text-align: center;
+  margin: 40px 0 21px 0px;
+}
+
+// .logo {
+//   text-align: center;
+// }
+
+
+/* Menu
+=================================*/
+
+#main-nav {
+  text-align: center;
+  width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+#mobile_menu {
+  width: 318px;
+  text-align: center;
+  margin-left: 0;
+}
+
+.mobile_nav {
+  width: 250px;
+  margin: 4px auto 0;
+}
+
+.it_mobile_menu a {
+  display: block;
+  padding-left: 0px;
+  color: #3B3B3B;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.ddsmoothmenu .sub-menu {
+  margin-left: 100px !important;
+  visibility: hidden;
+  li {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 200px !important;
+    clear: both;
+    left: 20px;
+  }
+}
+
+.mobile_nav {
+  display: inline-block;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.ddsmoothmenu {
+  text-align: center;
+}
+li.depth-4 ul.children {
+  padding-left: 0;
+}
+
+#menu li {
+  float: none !important;
+}
+
+
+
+/* Flexslider
+================================================== */
+
+.slider-wrapper {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.flexslider .slides img {
+  display: block;
+  // width: 468px;
+  // height: 192px;
+}
+.flexslider {
+  margin-top: 5px;
+}
+.flex-caption {
+  background-image: none;
+  display: none;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.flex-direction-nav {
+  height: 0;
+  position: absolute;
+  top: 245px;
+  right: 225px;
+  border: solid 1px #FF0000;
+  display: none;
+}
+/* Control Nav */
+.flex-control-nav {
+  position: absolute;
+  bottom: 60px;
+  text-align: right;
+  right: 20px;
+  text-indent: 9999px;
+  li {
+    margin: 0 0 0 5px;
+    zoom: 1;
+    display: block;
+    &:first-child {
+      margin: 0;
+    }
+    a {
+      width: 15px;
+      height: 20px;
+      background: url(images/pagination.png) no-repeat;
+      cursor: pointer;
+      display: inline-block;
+      &:hover {
+        background-position: 0 -20px;
+      }
+      &.active {
+        background-position: 0px -20px;
+        cursor: default;
+      }
+    }
+  }
+}
+
+.testimonial {
+  .slides_container {
+    width: 468px;
+    div.slide {
+      width: 468px;
+    }
+  }
+  .item {
+    width: 468px;
+    margin: 0 0px;
+  }
+}
+
+.top-search .searchform input[type="text"] {
+  width: 235px;
+}
+
+
+/* Feature Content
+================================================*/
+
+.feature-content-inner {
+    float: none;
+    max-width: 300px;
+    min-width: 60%;
+}
+
+.feature-content {
+  /* margin:0 auto;
+   padding-left:15px;*/
+  text-align: center;
+
+  .feature-content-inner {
+    max-width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    p {
+      margin-bottom: 25px;
+    }
+    .readmore {
+      margin-left: 40px;
+    }
+  }
+}
+
+
+/* Wordpress
+================================================*/
+
+.content-bar {
+  float: none;
+  width: auto;
+  
+  img {
+    max-width: 470px;
+    height: auto;
+  }
+
+  .post .post_content img.postimg {
+    max-width: 93%;
+  }
+}
+
+.sidebar {
+  float: none;
+  width: auto;
+  padding-left: 0;
+  padding-top: 40px;
+  max-width: 100%;
+}
+
+.feature-post .feature-box {
+  margin-bottom: 10px;
+  overflow: hidden;
+  margin-right: 30px;
+  float: none;
+  display: compact;
+  padding-bottom: 0px;
+  width: 180px;
+  margin-left: 145px;
+  p {
+    margin-bottom: 25px;
+  }
+}
+
+.signuparea .signup-content {
+  height: auto;
+}
+
+.signup-content {
+  .signupinfo {
+    margin-right: 20px;
+  }
+  .signuplogin {
+    margin-top: 25px;
+    border-left: none;
+    margin-left: 20px;
+    .signupform {
+      margin-right: 90px;
+    }
+  }
+}
+
+.signupform input {
+  &[type="text"] {
+    margin-left: 15px;
+  }
+  &[type="submit"] {
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+h1.post_title.single {
+  width: 471px;
+  text-align: center;
+}
+
+
+/* Footer 
+================================================*/
+
+.footer {
+  $footer-black: lighten($black, 30%);
+  background: $black;
+  padding: 20px 1%;
+  overflow: hidden;
+
+  .widget_inner {
+    // @include span(24);
+    width: auto;
+    padding: 0 2%;
+
+    color: $footer-black;
+
+    &.first {
+      width: auto;
+      padding: 0 2%;
+      // @include span(24);
+    }
+    &.last {
+      overflow: hidden;
+      padding-right: 18px;
+    }
+  }
+}

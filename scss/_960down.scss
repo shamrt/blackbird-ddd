@@ -1,0 +1,120 @@
+#main-nav {
+  width: auto;
+}
+
+.top-search {
+  height: 0px;
+  margin-bottom: 0px;
+
+  .searchform {
+    display: none;
+    margin-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin-left: 35px;
+    width: 25%;
+    background-color: #343434;
+  }
+}
+
+.logo! {}
+h1.post_title.single {
+  width: 505px;
+}
+
+
+/* Flexslider
+================================================== */
+
+.flexslider .slides img {
+  display: block;
+  // width: 960px;
+  // height: 400px;
+}
+
+
+/* Feature content
+================================================== */
+
+.feature-content {
+  text-align: center;
+}
+
+.testimonial {
+  .slides_container {
+    max-width: 760px;
+    div.slide {
+      max-width: 760px;
+    }
+  }
+  .item {
+    max-width: 760px;
+    margin: 0 0px;
+  }
+}
+
+.feature-content .feature-content-inner {
+  // max-width: 250px;
+  // margin-left: 35px;
+  .readmore! {}
+}
+
+.feature-post .feature-box {
+  margin-bottom: 35px;
+  overflow: hidden;
+  margin-right: 30px;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.signuparea .signup-content {
+  height: auto;
+}
+.signup-content {
+  .signupinfo {
+    margin-left: 140px;
+  }
+  .signuplogin {
+    margin-top: 15px;
+    border-left: none;
+    margin-right: 20px;
+    text-align: center;
+    margin-left: 175px;
+    margin-bottom: 20px;
+    .signupform {
+      margin-right: 0;
+    }
+  }
+}
+.signupform input {
+  &[type="text"] {
+    margin-left: 5px;
+  }
+  &[type="submit"] {
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+}
+.content-bar {
+  .post .post_content img.postimg {
+    max-width: 93%;
+  }
+  img {
+    max-width: 498px;
+    height: auto;
+  }
+}
+
+
+
+/*Footer 
+================================================*/
+
+.footer {
+
+  .widget_inner {
+
+    &.first {}
+    &.last {}
+  }
+}

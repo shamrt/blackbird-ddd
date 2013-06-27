@@ -1,0 +1,427 @@
+/* 
+    Theme Name : Themia Lite
+    Document   : editor-style
+    Created on : Oct 11, 2011, 1:33:25 PM
+    Author     : Inkthemes
+    Description: Used to style the TinyMCE editor.
+    Purpose of the stylesheet follows.
+*/
+/* line 10, scss/editor-style.scss */
+html .mceContentBody {
+  max-width: 584px;
+}
+
+/* line 14, scss/editor-style.scss */
+* {
+  color: inherit;
+  font: 13px/1.5 'Trebuchet MS', Arial, sans-serif;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: 1.625;
+}
+
+/* line 22, scss/editor-style.scss */
+body {
+  color: #333;
+  font: 13px/1.5 'Trebuchet MS', Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+/* Headings */
+/* line 31, scss/editor-style.scss */
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  font-family: 'FolksLightRegular';
+}
+
+/* line 36, scss/editor-style.scss */
+h1, h2 {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 .8125em;
+}
+
+/* line 43, scss/editor-style.scss */
+h3 {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 50, scss/editor-style.scss */
+h4, h5, h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 55, scss/editor-style.scss */
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.625em;
+}
+
+/* Text elements */
+/* line 64, scss/editor-style.scss */
+p, ul, ol, dl {
+  font-weight: 300;
+}
+
+/* line 68, scss/editor-style.scss */
+p {
+  margin-bottom: 1.625em;
+}
+
+/* line 72, scss/editor-style.scss */
+ul, ol {
+  margin: 0 0 1.625em 2.5em;
+  padding: 0;
+}
+
+/* line 77, scss/editor-style.scss */
+ul {
+  list-style: square;
+}
+
+/* line 81, scss/editor-style.scss */
+ol {
+  list-style-type: decimal;
+}
+/* line 83, scss/editor-style.scss */
+ol ol {
+  list-style: upper-alpha;
+}
+/* line 85, scss/editor-style.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+/* line 87, scss/editor-style.scss */
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+/* line 94, scss/editor-style.scss */
+ul ul, ol ol, ul ol, ol ul {
+  margin-bottom: 0;
+}
+
+/* line 98, scss/editor-style.scss */
+dl {
+  margin: 0 1.625em;
+}
+
+/* line 102, scss/editor-style.scss */
+dt {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 107, scss/editor-style.scss */
+dd {
+  margin: 0 0 1.625em;
+}
+
+/* line 111, scss/editor-style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 115, scss/editor-style.scss */
+cite, em, i {
+  font-style: italic;
+}
+
+/* line 119, scss/editor-style.scss */
+cite {
+  border: none;
+}
+
+/* line 123, scss/editor-style.scss */
+big {
+  font-size: 131.25%;
+}
+
+/* line 127, scss/editor-style.scss */
+.mceContentBody blockquote {
+  font-family: Georgia, "Bitstream Charter", serif !important;
+  font-style: italic !important;
+  font-weight: normal;
+  margin: 0 3em;
+}
+/* line 132, scss/editor-style.scss */
+.mceContentBody blockquote p {
+  font-family: Georgia, "Bitstream Charter", serif !important;
+  font-style: italic !important;
+  font-weight: normal;
+  margin: 0 3em;
+}
+/* line 138, scss/editor-style.scss */
+.mceContentBody blockquote em, .mceContentBody blockquote i {
+  font-style: normal;
+}
+/* line 141, scss/editor-style.scss */
+.mceContentBody blockquote cite {
+  font-style: normal;
+  color: #666;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* line 151, scss/editor-style.scss */
+pre {
+  background: #f4f4f4;
+  font: 13px "Courier 10 Pitch", Courier, monospace;
+  line-height: 1.5;
+  margin-bottom: 1.625em;
+  padding: 0.75em 1.625em;
+}
+
+/* line 159, scss/editor-style.scss */
+code, kbd, code var {
+  font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+/* line 163, scss/editor-style.scss */
+abbr, acronym, dfn {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 168, scss/editor-style.scss */
+address {
+  display: block;
+  margin: 0 0 1.625em;
+}
+
+/* line 173, scss/editor-style.scss */
+del {
+  color: #333;
+}
+
+/* line 177, scss/editor-style.scss */
+ins {
+  background: #fff9c0;
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 184, scss/editor-style.scss */
+sup, sub {
+  font-size: 10px;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 192, scss/editor-style.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 196, scss/editor-style.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 200, scss/editor-style.scss */
+input[type="text"], textarea {
+  background: #fafafa;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  color: #888;
+}
+
+/* line 209, scss/editor-style.scss */
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* line 213, scss/editor-style.scss */
+textarea {
+  padding-left: 3px;
+  width: 98%;
+}
+/* line 214, scss/editor-style.scss */
+textarea:focus {
+  color: #333;
+}
+
+/* line 221, scss/editor-style.scss */
+input[type="text"] {
+  padding: 3px;
+}
+
+/* Links */
+/* line 227, scss/editor-style.scss */
+a {
+  color: #1b8be0;
+  text-decoration: none;
+}
+/* line 230, scss/editor-style.scss */
+a em, a strong {
+  color: #1b8be0;
+  text-decoration: none;
+}
+/* line 234, scss/editor-style.scss */
+a:focus, a:active, a:hover {
+  text-decoration: underline;
+}
+
+/* Alignment */
+/* line 241, scss/editor-style.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+}
+
+/* line 247, scss/editor-style.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+}
+
+/* line 253, scss/editor-style.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tables */
+/* line 262, scss/editor-style.scss */
+table {
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  margin: 0 0 1.625em;
+  width: 100%;
+}
+
+/* line 272, scss/editor-style.scss */
+tr th {
+  border: none !important;
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 2.6em;
+  text-transform: uppercase;
+}
+
+/* line 282, scss/editor-style.scss */
+td {
+  border: none !important;
+  border-top: 1px solid #ddd !important;
+  padding: 6px 10px 6px 0;
+}
+
+/* Images */
+/* line 291, scss/editor-style.scss */
+img[class*="wp-image-"] {
+  height: auto;
+  max-width: 97.5%;
+}
+/* line 295, scss/editor-style.scss */
+img.size-full {
+  width: auto;
+  /* Prevent stretching of full-size images in IE8 */
+}
+/* line 299, scss/editor-style.scss */
+img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 307, scss/editor-style.scss */
+p img, .wp-caption {
+  margin-top: 0.4em;
+}
+
+/* line 311, scss/editor-style.scss */
+img {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+/* line 314, scss/editor-style.scss */
+img.alignleft, img.alignright, img.aligncenter {
+  margin-bottom: 1.625em;
+}
+
+/* line 319, scss/editor-style.scss */
+.wp-caption {
+  background: #eee;
+  border: none;
+  margin-bottom: 1.625em;
+  max-width: 96%;
+  padding: 9px;
+}
+/* line 325, scss/editor-style.scss */
+.wp-caption img {
+  display: block;
+  margin: 5px auto 0 !important;
+  max-width: 98%;
+  border-color: #eee;
+}
+/* line 331, scss/editor-style.scss */
+.wp-caption .wp-caption-text {
+  color: #666;
+  font-family: Georgia, serif !important;
+  font-size: 12px;
+  margin: 0 0 0.6em 0 !important;
+  padding: 0 0 5px 40px;
+  position: relative;
+  text-align: left;
+}
+
+/* line 342, scss/editor-style.scss */
+.wp-caption-dd {
+  color: #666;
+  font-family: Georgia, serif !important;
+  font-size: 12px;
+  margin: 0 0 0.6em 0 !important;
+  padding: 0 0 5px 40px;
+  position: relative;
+  text-align: left;
+}
+
+/* line 352, scss/editor-style.scss */
+.wp-caption .wp-caption-text:before {
+  color: #666;
+  content: '\2014';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  margin-right: 5px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+/* line 365, scss/editor-style.scss */
+a:focus img[class*="wp-image-"], a:hover img[class*="wp-image-"], a:active img[class*="wp-image-"] {
+  background: #eee;
+  border-color: #bbb;
+}
+
+/* line 372, scss/editor-style.scss */
+.wp-caption a:focus img, .wp-caption a:active img, .wp-caption a:hover img {
+  background: #fff;
+  border-color: #ddd;
+}

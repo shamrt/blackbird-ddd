@@ -1,0 +1,100 @@
+/*contact page
+=======================================================*/
+
+.contact-page {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  h1 {
+    color: #333333;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+}
+
+#contactForm {
+  .error {
+    color: red;
+    float: left;
+  }
+  input {
+    margin-bottom: 10px;
+  }
+}
+
+.contactform {
+  textarea, label {
+    margin-bottom: 10px;
+  }
+}
+
+#contactForm {
+  input[type="text"], textarea {
+    float: left;
+    background-color: #f9f3e6;
+    padding: 0 5px;
+    clear: both;
+    border: none;
+  }
+  input[type="text"] {
+    height: 36px;
+    border: solid 1px #e2dbcd;
+    width: 60%;
+  }
+  label {
+    float: left;
+    clear: both;
+    font-size: 14px;
+    padding-top: 3px;
+  }
+  input[type="submit"] {
+    clear: both;
+    width: 125px;
+    height: 33px;
+    float: left;
+    background: #a39476;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    padding-bottom: 2px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Trebuchet MS";
+    &:hover {
+      color: $accent-color;
+      text-shadow: none;
+      opacity: 0.5;
+    }
+  }
+  textarea {
+    height: 200px;
+    width: 96%;
+    border: solid 1px #e2dbcd;
+  }
+  input[type="text"]:focus, textarea:focus {
+    background: #fff;
+    border: 1px solid darken($accent-color, 15%);
+  }
+}
+
+.contact-page {
+  padding-left: 6px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  p {
+    color: #4f4e4e;
+    margin-bottom: 50px;
+  }
+}
+
+.content_bg .sidebar .contact-info {
+  span {
+    color: #576f21;
+  }
+  p {
+    margin: 10px 0;
+  }
+}

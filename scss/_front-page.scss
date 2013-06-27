@@ -1,0 +1,118 @@
+/*content
+=============================================*/
+
+.sticky!, .bypostauthor! {}
+
+.content {
+  overflow: hidden;
+  margin-top: 15px;
+  padding: 0 10px;
+  margin-bottom: 0;
+  max-width: 100%;
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #12222f;
+    line-height: 45px;
+    font-weight: normal;
+  }
+}
+
+
+/* Feature Content
+================================================*/
+
+.feature-content {
+  @include clearfix;
+  text-align: center;
+  margin-top: 40px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+h1.ftitle {
+  font-size: 26px;
+  color: $black;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-content .circle-content {
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.feature-content-inner {
+  @include span(8);
+  text-align: center;
+
+  &.one {
+    @include grid_first;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: $black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    a:hover {
+      color: $black;
+    }
+  }
+  p {
+    color: #717273;
+    font-size: 13px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .circle {
+    @include border-radius(100px);
+    width: 152px;
+    height: 148px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    background: $accent-color;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+    img {
+      @include border-radius(100px);
+      @include transition(all 0.6s linear);
+      width: 142px;
+      height: 138px;
+      background: $accent-color;
+      margin: 5px;
+      text-align: center;
+
+      &:hover {
+        opacity: 0.5;
+        color: $accent-color;
+      }
+    }
+  }
+
+  .read-more {
+    @include transition(all 0.6s linear);
+    // @include border-radius(30px);
+    background: $button-color;
+    width: 80%;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    // font-family: Bitter;
+    font-size: 16px;
+    margin: 25px auto;
+    display: block;
+
+    &:hover {
+      opacity: 0.5;
+      color: lighten($link-color, 30%);
+    }
+  }
+}

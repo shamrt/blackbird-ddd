@@ -1,0 +1,204 @@
+/* line 1, ../../scss/css/color/red.scss */
+.menu_wrapper {
+  background: #9f1106;
+}
+
+/* line 7, ../../scss/css/color/red.scss */
+#menu li a {
+  color: #efc4c1;
+  text-shadow: 0 1px 1px #820e05;
+}
+/* line 11, ../../scss/css/color/red.scss */
+#menu li.current-menu-item a, #menu li.current_page_item a, #menu li.current-menu-parent a, #menu li.current_page_parent a {
+  background: url(images/menutipred.png) bottom center no-repeat;
+}
+/* line 15, ../../scss/css/color/red.scss */
+#menu li a.selected, #menu li a:hover {
+  background: url(images/menutipred.png) bottom center no-repeat;
+}
+/* line 19, ../../scss/css/color/red.scss */
+#menu li li a {
+  color: #cbb0f1;
+}
+/* line 21, ../../scss/css/color/red.scss */
+#menu li li a.selected, #menu li li a:hover {
+  color: #cbb0f1;
+}
+/* line 27, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li > ul {
+  background: #9f1106;
+}
+/* line 29, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li > ul li > ul {
+  background: #9f1106;
+}
+/* line 35, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li li a:link, #menu .ddsmoothmenu li li a:visited {
+  color: #fff;
+  background: url(images/menusep-red.png) bottom repeat-x;
+}
+/* line 41, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li li:last-child a:link, #menu .ddsmoothmenu li li:last-child a:visited {
+  background: none;
+}
+/* line 45, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li li a {
+  background: url(images/menusep-red.png) bottom repeat-x;
+}
+/* line 47, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li li a.selected, #menu .ddsmoothmenu li li a:hover {
+  color: #efc4c1;
+  background: url(images/menusep-red.png) bottom repeat-x;
+}
+/* line 55, ../../scss/css/color/red.scss */
+#menu li.current-menu-item a:hover, #menu li.current-menu-parent a:hover, #menu li.current_page_parent a:hover, #menu li a:hover.selected {
+  color: #fff;
+}
+/* line 59, ../../scss/css/color/red.scss */
+#menu .ddsmoothmenu li li, #menu li.current_page_item a {
+  color: #fff;
+}
+
+/*top search
+====================================================*/
+/* Slider 
+==========================================*/
+/* line 70, ../../scss/css/color/red.scss */
+.slider-wrapper {
+  border-bottom: 1px solid #af160a;
+}
+
+/* #Slider Style Flexslider
+================================================== */
+/* Direction Nav */
+/* line 80, ../../scss/css/color/red.scss */
+.flex-direction-nav li a {
+  background: #515156;
+  color: #fafafa;
+}
+/* line 83, ../../scss/css/color/red.scss */
+.flex-direction-nav li a:hover {
+  background: #9f1106 !important;
+}
+/* line 87, ../../scss/css/color/red.scss */
+.flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default;
+}
+
+/* Control Nav */
+/* line 96, ../../scss/css/color/red.scss */
+.flex-control-nav li a {
+  background: url(images/spred.png) no-repeat;
+}
+
+/*Feature Content
+================================================*/
+/* line 103, ../../scss/css/color/red.scss */
+.feature-content h1 a:hover {
+  color: #9f1106;
+}
+
+/* line 108, ../../scss/css/color/red.scss */
+.feature-content-inner .circle {
+  background: #c21407;
+}
+/* line 110, ../../scss/css/color/red.scss */
+.feature-content-inner .circle img {
+  background: #c21407;
+}
+/* line 112, ../../scss/css/color/red.scss */
+.feature-content-inner .circle img:hover {
+  color: #cbb0f1;
+}
+/* line 117, ../../scss/css/color/red.scss */
+.feature-content-inner .read-more {
+  background: url(images/readmorered.png) center no-repeat;
+}
+
+/* line 122, ../../scss/css/color/red.scss */
+.feature-content .read-more:hover {
+  color: #efc4c1;
+}
+
+/*Feature-post
+==================================================*/
+/* line 129, ../../scss/css/color/red.scss */
+.feature-post .feature-post-inner h1 a:hover {
+  color: #9f1106;
+}
+
+/* #testimonial slider
+================================================== */
+/* line 136, ../../scss/css/color/red.scss */
+.testimonial .pagination li a {
+  background-image: url(images/tpred.png);
+}
+
+/* line 141, ../../scss/css/color/red.scss */
+#slides_testimonial .next, #slides_testimonial .prev {
+  background: #515156;
+}
+/* line 144, ../../scss/css/color/red.scss */
+#slides_testimonial .next:hover, #slides_testimonial .prev:hover {
+  background: #9f1106 !important;
+}
+
+/*sinupform 
+====================================================*/
+/* line 153, ../../scss/css/color/red.scss */
+.signupform input[type="text"]:focus {
+  border: 1px solid #9f1106;
+}
+/* line 156, ../../scss/css/color/red.scss */
+.signupform input[type="submit"]:hover {
+  border: solid 1px #9f1106;
+}
+
+/*Blog Page
+===================================================*/
+/* line 165, ../../scss/css/color/red.scss */
+.content-bar .post .post_title a:hover {
+  color: #9f1106;
+}
+/* line 168, ../../scss/css/color/red.scss */
+.content-bar .post .post_content .read_more {
+  color: #9f1106;
+}
+/* line 170, ../../scss/css/color/red.scss */
+.content-bar .post .post_content .read_more:hover {
+  opacity: 0.5;
+  color: #9f1106;
+}
+/* line 176, ../../scss/css/color/red.scss */
+.content-bar .post .post_meta a {
+  color: #9f1106;
+}
+/* line 178, ../../scss/css/color/red.scss */
+.content-bar .post .post_meta a:hover {
+  opacity: 0.5;
+  color: #9f1106;
+}
+/* line 183, ../../scss/css/color/red.scss */
+.content-bar .post .post_meta .post_comment a {
+  color: #9f1106;
+}
+
+/*Sidebar 
+====================================================*/
+/* line 192, ../../scss/css/color/red.scss */
+.sidebar ul li a:hover {
+  color: #9f1106;
+}
+
+/*Footer 
+================================================*/
+/* line 201, ../../scss/css/color/red.scss */
+.footer .widget_inner .sitelink a:hover, .footer .widget_inner a:hover {
+  color: #9f1106;
+}
+/* line 205, ../../scss/css/color/red.scss */
+.footer ul li a:hover {
+  color: #9f1106;
+}
