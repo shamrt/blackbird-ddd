@@ -32,7 +32,7 @@
                                     </a>
                                 <?php } else { ?>
                                   
-                                        <?php blackbird_get_image(595, 300); ?> 
+                                        <?php ddd_get_image(595, 300); ?> 
                                         <?php                                   
                                 }
                                 ?>	

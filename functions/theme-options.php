@@ -1,16 +1,16 @@
 <?php
 
-add_action('init', 'blackbird_options');
-if (!function_exists('blackbird_options')) {
+add_action('init', 'ddd_options');
+if (!function_exists('ddd_options')) {
 
-    function blackbird_options() {
+    function ddd_options() {
         // VARIABLES
         $themename = wp_get_theme(STYLESHEETPATH . '/style.css');
         $themename = $themename['Name'];
         $shortname = "of";
         // Populate OptionsFramework option in array for use in theme
-        global $blackbird_options;
-        $blackbird_options = blackbird_get_option('blackbird_options');
+        global $ddd_options;
+        $ddd_options = ddd_get_option('ddd_options');
         //Front page on/off
         $file_rename = array("on" => "On", "off" => "Off");
         // Background Defaults
@@ -35,33 +35,35 @@ if (!function_exists('blackbird_options')) {
 
         // If using image radio buttons, define a directory path
         $imagepath = get_stylesheet_directory_uri() . '/images/';
+
         /* ---------------------------------------------------------------------------- */
         /* General Setting */
         /* ---------------------------------------------------------------------------- */
         $options = array(
             array("name" => "General Settings",
                 "type" => "heading"),
+
             array("name" => "Custom Logo",
                 "desc" => "Choose your own logo. Optimal Size: 221px Wide by 84px Height.",
-                "id" => "blackbird_logo",
+                "id" => "ddd_logo",
                 "type" => "upload"),
             array("name" => "Home Page Top Right Cell Info",
                 "desc" => "Enter your text for home page top right cell info.",
-                "id" => "blackbird_topright_cell",
+                "id" => "ddd_topright_cell",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Home Page Top Right Contact Info",
                 "desc" => "Enter your text for home page top right contact info.",
-                "id" => "blackbird_topright_text",
+                "id" => "ddd_topright_text",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Custom Favicon",
                 "desc" => "Specify a 16px x 16px image that will represent your website's favicon.",
-                "id" => "blackbird_favicon",
+                "id" => "ddd_favicon",
                 "type" => "upload"),
             array("name" => "Body Background Image",
                 "desc" => "Select image to change your website background",
-                "id" => "blackbird_bodybg",
+                "id" => "ddd_bodybg",
                 "std" => "",
                 "type" => "upload"),
             array("name" => "Front Page On/Off",
@@ -70,42 +72,55 @@ if (!function_exists('blackbird_options')) {
                 "std" => "on",
                 "type" => "radio",
                 "options" => $file_rename),
-            /* ---------------------------------------------------------------------------- */
-            /* Slider Setting */
-            /* ---------------------------------------------------------------------------- */
-            //Slider Setting
-            array("name" => "Home Top Feature",
-                "type" => "heading"),
-            //First Slider
-            array("name" => "Home Top Feature Image",
-                "desc" => "Choose your image for first slider. Optimal size is 950px wide and 390px height.",
-                "id" => "blackbird_slideimage1",
-                "std" => "",
-                "type" => "upload"),
-            array("name" => "Home Top Feature Heading",
-                "desc" => "Enter your text heading for first slider.",
-                "id" => "blackbird_sliderheading1",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "Home Top Feature Link URL",
-                "desc" => "Enter your link url for first Slider section.",
-                "id" => "blackbird_Sliderlink1",
-                "std" => "",
-                "type" => "text"),
-            array("name" => "Home Top Feature Description",
-                "desc" => "Enter your text description for first slider.",
-                "id" => "blackbird_sliderdes1",
-                "std" => "",
-                "type" => "textarea"),
-            /* ---------------------------------------------------------------------------- */
-            /* Homepage Feature Area */
-            /* ---------------------------------------------------------------------------- */
+
+                //Slider Setting
+                array("name" => "Home Top Feature",
+                    "type" => "heading")
+        );
+
+        /* ---------------------------------------------------------------------------- */
+        /* Slider Setting */
+        /* ---------------------------------------------------------------------------- */
+        for ($i=1; $i <= 5; $i++) { 
+            array_push($options, 
+
+                //First Slider
+                array("name" => "Home Top Feature $i - Image",
+                    "desc" => "Choose your image for first slider. Optimal size is 950px wide and 390px height.",
+                    "id" => "ddd_slideimage$i",
+                    "std" => "",
+                    "type" => "upload"),
+                array("name" => "Home Top Feature $i - Heading",
+                    "desc" => "Enter your text heading for first slider.",
+                    "id" => "ddd_sliderheading$i",
+                    "std" => "",
+                    "type" => "text"),
+                array("name" => "Home Top Feature $i - Link URL",
+                    "desc" => "Enter your link url for first Slider section.",
+                    "id" => "ddd_Sliderlink$i",
+                    "std" => "",
+                    "type" => "text"),
+                array("name" => "Home Top Feature $i - Description",
+                    "desc" => "Enter your text description for first slider.",
+                    "id" => "ddd_sliderdes$i",
+                    "std" => "",
+                    "type" => "textarea")
+            );
+
+        }
+
+
+        /* ---------------------------------------------------------------------------- */
+        /* Homepage Feature Area */
+        /* ---------------------------------------------------------------------------- */
+        array_push($options, 
+
             array("name" => "Homepage Settings",
                 "type" => "heading"),
             //Homepage Main Heading 
             array("name" => "Home Page Heading",
                 "desc" => "Enter your heading text for home page",
-                "id" => "blackbird_mainheading",
+                "id" => "ddd_mainheading",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Home Page Feature Content",
@@ -114,66 +129,70 @@ if (!function_exists('blackbird_options')) {
             //***Code for Feature Feature***//
             array("name" => "First Feature Heading",
                 "desc" => "Enter your heading for first Feature area",
-                "id" => "blackbird_headline1",
+                "id" => "ddd_headline1",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "First Feature Image",
                 "desc" => "Choose image for your first Feature area. Optimal size 158px x 165px",
-                "id" => "blackbird_wimg1",
+                "id" => "ddd_wimg1",
                 "std" => "",
                 "type" => "upload"),
             array("name" => "First Feature Content",
                 "desc" => "Enter your content for first Feature area",
-                "id" => "blackbird_feature1",
+                "id" => "ddd_feature1",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "First Feature Link",
                 "desc" => "Enter your link for first Feature area",
-                "id" => "blackbird_link1",
+                "id" => "ddd_link1",
                 "std" => "",
                 "type" => "text"),
-//***Code for second Feature***//
+
+            //***Code for second Feature***//
             array("name" => "Second Feature Heading",
                 "desc" => "Enter your heading for second Feature area",
-                "id" => "blackbird_headline2",
+                "id" => "ddd_headline2",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Second Feature Image",
                 "desc" => "Choose image for your second Feature area. Optimal size 158px x 165px",
-                "id" => "blackbird_fimg2",
+                "id" => "ddd_fimg2",
                 "std" => "",
                 "type" => "upload"),
             array("name" => "Second Feature Content",
                 "desc" => "Enter your content for second feature area",
-                "id" => "blackbird_feature2",
+                "id" => "ddd_feature2",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Second Feature Link",
                 "desc" => "Enter your link for second Feature area",
-                "id" => "blackbird_link2",
+                "id" => "ddd_link2",
                 "std" => "",
                 "type" => "text"),
-//***Code for third Feature***//	
+
+            //***Code for third Feature***//	
             array("name" => "Third Feature Heading",
                 "desc" => "Enter your heading for third Feature area",
-                "id" => "blackbird_headline3",
+                "id" => "ddd_headline3",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Third Feature Image",
                 "desc" => "Choose image for your thrid Feature. Optimal size 158px x 165px",
-                "id" => "blackbird_fimg3",
+                "id" => "ddd_fimg3",
                 "std" => "",
                 "type" => "upload"),
             array("name" => "Third Feature Content",
                 "desc" => "Enter your content for third Feature area",
-                "id" => "blackbird_feature3",
+                "id" => "ddd_feature3",
                 "std" => "",
                 "type" => "textarea"),
             array("name" => "Third Feature Link",
                 "desc" => "Enter your link for third feature area",
-                "id" => "blackbird_link3",
+                "id" => "ddd_link3",
                 "std" => "",
                 "type" => "text"),
+
+
             /* ---------------------------------------------------------------------------- */
             /* Social Logos */
             /* ---------------------------------------------------------------------------- */
@@ -181,24 +200,26 @@ if (!function_exists('blackbird_options')) {
                 "type" => "heading"),
             array("name" => "Facebook URL",
                 "desc" => "Enter your Facebook URL if you have one",
-                "id" => "blackbird_facebook",
-                "std" => "#",
+                "id" => "ddd_facebook",
+                "std" => "",
                 "type" => "text"),
             array("name" => "Twitter URL",
                 "desc" => "Enter your Twitter URL if you have one",
-                "id" => "blackbird_twitter",
-                "std" => "#",
+                "id" => "ddd_twitter",
+                "std" => "",
                 "type" => "text"),
             array("name" => "LinkedIn URL",
                 "desc" => "Enter your LinkedIn URL if you have one",
-                "id" => "blackbird_linked",
-                "std" => "#",
+                "id" => "ddd_linked",
+                "std" => "",
                 "type" => "text"),
             array("name" => "RSS Feed URL",
                 "desc" => "Enter your RSS Feed URL if you have one",
-                "id" => "blackbird_rss",
-                "std" => "#",
+                "id" => "ddd_rss",
+                "std" => "",
                 "type" => "text"),
+
+
             /* ---------------------------------------------------------------------------- */
             /* Styling Setting */
             /* ---------------------------------------------------------------------------- */
@@ -206,13 +227,14 @@ if (!function_exists('blackbird_options')) {
                 "type" => "heading"),
             array("name" => "Custom CSS",
                 "desc" => "Quickly add some Custom CSS to your theme by adding it to this block.",
-                "id" => "blackbird_customcss",
+                "id" => "ddd_customcss",
                 "std" => "",
                 "type" => "textarea")
         );
-        blackbird_update_option('of_template', $options);
-        blackbird_update_option('of_themename', $themename);
-        blackbird_update_option('of_shortname', $shortname);
+
+        ddd_update_option('of_template', $options);
+        ddd_update_option('of_themename', $themename);
+        ddd_update_option('of_shortname', $shortname);
     }
 
 }

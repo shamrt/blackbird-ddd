@@ -6,32 +6,32 @@
 // Load static framework options pages 
 $functions_path = get_template_directory() . '/functions/';
 
-function blackbird_optionsframework_add_admin() {
+function ddd_optionsframework_add_admin() {
     global $query_string;
 
-    $themename = blackbird_get_option('of_themename');
-    $shortname = blackbird_get_option('of_shortname');
+    $themename = ddd_get_option('of_themename');
+    $shortname = ddd_get_option('of_shortname');
 
     if (isset($_REQUEST['page']) && $_REQUEST['page'] == 'optionsframework') {
         if (isset($_REQUEST['of_save']) && 'reset' == $_REQUEST['of_save']) {
-            $options = blackbird_get_option('of_template');
-            blackbird_reset_options($options, 'optionsframework');
+            $options = ddd_get_option('of_template');
+            ddd_reset_options($options, 'optionsframework');
             header("Location: admin.php?page=optionsframework&reset=true");
             die;
         }
     }
-    $of_page = add_theme_page($themename, 'Theme Options', 'edit_theme_options', 'optionsframework', 'blackbird_optionsframework_options_page', 'div');
+    $of_page = add_theme_page($themename, 'Theme Options', 'edit_theme_options', 'optionsframework', 'ddd_optionsframework_options_page', 'div');
 
     // Add framework functionaily to the head individually
-    add_action("admin_print_scripts-$of_page", 'blackbird_load_only');
+    add_action("admin_print_scripts-$of_page", 'ddd_load_only');
 }
 
-add_action('admin_menu', 'blackbird_optionsframework_add_admin');
+add_action('admin_menu', 'ddd_optionsframework_add_admin');
 /* ----------------------------------------------------------------------------------- */
 /* Options Framework Reset Function - of_reset_options */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_reset_options($options, $page = '') {
+function ddd_reset_options($options, $page = '') {
     global $wpdb;
     $count = 0;
 
@@ -51,22 +51,22 @@ function blackbird_reset_options($options, $page = '') {
 
             if ($option_type == 'multicheck') {
                 foreach ($option['options'] as $option_key => $option_option) {
-                    blackbird_delete_option("{$option_id}_{$option_key}");
+                    ddd_delete_option("{$option_id}_{$option_key}");
                 }
             } else if (is_array($option_type)) {
                 foreach ($option_type as $inner_option) {
                     $option_id = $inner_option['id'];
-                    blackbird_delete_option($option_id);
+                    ddd_delete_option($option_id);
                 }
             } else {
-                blackbird_delete_option($option_id);
+                ddd_delete_option($option_id);
             }
         }
     }
 
     //When Theme Options page is reset - Add the of_options option
     if ($page == 'optionsframework') {
-        blackbird_delete_option('of_options');
+        ddd_delete_option('of_options');
     }
 }
 
@@ -74,15 +74,10 @@ function blackbird_reset_options($options, $page = '') {
 /* Build the Options Page - optionsframework_options_page */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_optionsframework_options_page() {
-    $options = blackbird_get_option('of_template');
-    $themename = blackbird_get_option('of_themename');
+function ddd_optionsframework_options_page() {
+    $options = ddd_get_option('of_template');
+    $themename = ddd_get_option('of_themename');
     ?>
-    <div class="trail-notify">
-        <h1><?php _e('Get BlackBird Theme PRO!','black-bird'); ?></h1>
-        <p><?php _e('You are Using the Lite Version of BlackBird Theme. Upgrade to Pro for extra features like Home Page Slider, Contact Page Template, Gallery Page Template, FullWidth Page Template, Multiple Color Options and much more.</p>
-        <a href="http://www.inkthemes.com/wp-themes/blackbird-responsive-wordpress-theme/" target="blank">Upgrade to Black Bird Theme PRO Now >>','black-bird'); ?></a>
-    </div>
 
     <div class="wrap" id="of_container">
         <div id="of-popup-save" class="of-save-popup">
@@ -97,14 +92,11 @@ function blackbird_optionsframework_options_page() {
                 <div class="logo">
                     <h2><?php _e('BlackBird Theme Options','black-bird'); ?></h2>
                 </div>
-                <a href="http://www.inkthemes.com" target="_new">
-                    <div class="icon-option"> </div>
-                </a>
                 <div class="clear"></div>
             </div>
     <?php
     // Rev up the Options Machine
-    $return = blackbird_optionsframework_machine($options);
+    $return = ddd_optionsframework_machine($options);
     ?>
             <div id="main">
                 <div id="of-nav">
@@ -137,14 +129,14 @@ function blackbird_optionsframework_options_page() {
 /* Load required javascripts for Options Page - of_load_only */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_load_only() {
-    add_action('admin_head', 'blackbird_admin_head');
+function ddd_load_only() {
+    add_action('admin_head', 'ddd_admin_head');
 
     wp_enqueue_script('jquery-ui-core');
     wp_register_script('jquery-input-mask', get_template_directory_uri() . '/functions/js/jquery.maskedinput-1.2.2.js', array('jquery'));
     wp_enqueue_script('jquery-input-mask');
 
-    function blackbird_admin_head() {
+    function ddd_admin_head() {
 
         echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/functions/admin-style.css" media="screen" />';
 
@@ -158,18 +150,18 @@ function blackbird_load_only() {
         			
                 //Color Picker
         <?php
-        $options = blackbird_get_option('of_template');
+        $options = ddd_get_option('of_template');
 
         foreach ($options as $option) {
             if ($option['type'] == 'color' OR $option['type'] == 'typography' OR $option['type'] == 'border') {
                 if ($option['type'] == 'typography' OR $option['type'] == 'border') {
                     $option_id = $option['id'];
-                    $temp_color = blackbird_get_option($option_id);
+                    $temp_color = ddd_get_option($option_id);
                     $option_id = $option['id'] . '_color';
                     $color = $temp_color['color'];
                 } else {
                     $option_id = $option['id'];
-                    $color = blackbird_get_option($option_id);
+                    $color = ddd_get_option($option_id);
                 }
                 ?>
                                                         jQuery('#<?php echo $option_id; ?>_picker').children('div').css('backgroundColor', '<?php echo $color; ?>');    
@@ -448,11 +440,11 @@ function blackbird_load_only() {
 }
 
 /* ----------------------------------------------------------------------------------- */
-/* Ajax Save Action - blackbird_ajax_callback */
+/* Ajax Save Action - ddd_ajax_callback */
 /* ----------------------------------------------------------------------------------- */
-add_action('wp_ajax_of_ajax_post_action', 'blackbird_ajax_callback');
+add_action('wp_ajax_of_ajax_post_action', 'ddd_ajax_callback');
 
-function blackbird_ajax_callback() {
+function ddd_ajax_callback() {
     global $wpdb; // this is how you get access to the database
 
 
@@ -469,7 +461,7 @@ function blackbird_ajax_callback() {
         $uploaded_file = wp_handle_upload($filename, $override);
 
         $upload_tracking[] = $clickedID;
-        blackbird_update_option($clickedID, $uploaded_file['url']);
+        ddd_update_option($clickedID, $uploaded_file['url']);
 
         if (!empty($uploaded_file['error'])) {
             echo 'Upload Error: ' . $uploaded_file['error'];
@@ -479,18 +471,18 @@ function blackbird_ajax_callback() {
     } elseif ($save_type == 'image_reset') {
 
         $id = $_POST['data']; // Acts as the name
-        blackbird_delete_option($id);
+        ddd_delete_option($id);
     } elseif ($save_type == 'options' OR $save_type == 'framework') {
         $data = $_POST['data'];
 
         parse_str($data, $output);
         //print_r($output);
         //Pull options
-        $options = blackbird_get_option('of_template');
+        $options = ddd_get_option('of_template');
 
         foreach ($options as $option_array) {
             $id = $option_array['id'];
-            $old_value = blackbird_get_option($id);
+            $old_value = ddd_get_option($id);
             $new_value = '';
 
             if (isset($output[$id])) {
@@ -509,13 +501,13 @@ function blackbird_ajax_callback() {
                             if ($new_value == '') {
                                 $new_value = $std;
                             }
-                            blackbird_update_option($id, stripslashes($new_value));
+                            ddd_update_option($id, stripslashes($new_value));
                         }
                     }
                 } elseif ($new_value == '' && $type == 'checkbox') { // Checkbox Save
-                    blackbird_update_option($id, 'false');
+                    ddd_update_option($id, 'false');
                 } elseif ($new_value == 'true' && $type == 'checkbox') { // Checkbox Save
-                    blackbird_update_option($id, 'true');
+                    ddd_update_option($id, 'true');
                 } elseif ($type == 'multicheck') { // Multi Check Save
                     $option_options = $option_array['options'];
 
@@ -524,9 +516,9 @@ function blackbird_ajax_callback() {
                         $multicheck_id = $id . "_" . $options_id;
 
                         if (!isset($output[$multicheck_id])) {
-                            blackbird_update_option($multicheck_id, 'false');
+                            ddd_update_option($multicheck_id, 'false');
                         } else {
-                            blackbird_update_option($multicheck_id, 'true');
+                            ddd_update_option($multicheck_id, 'true');
                         }
                     }
                 } elseif ($type == 'typography') {
@@ -541,7 +533,7 @@ function blackbird_ajax_callback() {
 
                     $typography_array['color'] = $output[$option_array['id'] . '_color'];
 
-                    blackbird_update_option($id, $typography_array);
+                    ddd_update_option($id, $typography_array);
                 } elseif ($type == 'border') {
 
                     $border_array = array();
@@ -552,10 +544,10 @@ function blackbird_ajax_callback() {
 
                     $border_array['color'] = $output[$option_array['id'] . '_color'];
 
-                    blackbird_update_option($id, $border_array);
+                    ddd_update_option($id, $border_array);
                 } elseif ($type != 'upload_min') {
 
-                    blackbird_update_option($id, stripslashes($new_value));
+                    ddd_update_option($id, stripslashes($new_value));
                 }
             }
         }
@@ -567,7 +559,7 @@ function blackbird_ajax_callback() {
 /* Generates The Options Within the Panel - optionsframework_machine */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_optionsframework_machine($options) {
+function ddd_optionsframework_machine($options) {
 
     $counter = 0;
     $menu = '';
@@ -593,7 +585,7 @@ function blackbird_optionsframework_machine($options) {
 
             case 'text':
                 $val = $value['std'];
-                $std = blackbird_get_option($value['id']);
+                $std = ddd_get_option($value['id']);
                 if ($std != "") {
                     $val = $std;
                 }
@@ -603,7 +595,7 @@ function blackbird_optionsframework_machine($options) {
             case 'select':
                 $output .= '<select class="of-input" name="' . $value['id'] . '" id="' . $value['id'] . '">';
 
-                $select_value = blackbird_get_option($value['id']);
+                $select_value = ddd_get_option($value['id']);
 
                 foreach ($value['options'] as $option) {
 
@@ -649,7 +641,7 @@ function blackbird_optionsframework_machine($options) {
                         }
                     }
                 }
-                $std = blackbird_get_option($value['id']);
+                $std = ddd_get_option($value['id']);
                 if ($std != "") {
                     $ta_value = stripslashes($std);
                 }
@@ -695,17 +687,17 @@ function blackbird_optionsframework_machine($options) {
             case "upload":
                 $value['std'] = '';
                 if (isset($value['std'])) {
-                    $output .= blackbird_optionsframework_uploader_function($value['id'], $value['std'], null);
+                    $output .= ddd_optionsframework_uploader_function($value['id'], $value['std'], null);
                 }
                 break;
             case "upload_min":
 
-                $output .= blackbird_optionsframework_uploader_function($value['id'], $value['std'], 'min');
+                $output .= ddd_optionsframework_uploader_function($value['id'], $value['std'], 'min');
 
                 break;
             case "color":
                 $val = $value['std'];
-                $stored = blackbird_get_option($value['id']);
+                $stored = ddd_get_option($value['id']);
                 if ($stored != "") {
                     $val = $stored;
                 }
@@ -716,7 +708,7 @@ function blackbird_optionsframework_machine($options) {
             case "typography":
 
                 $default = $value['std'];
-                $typography_stored = blackbird_get_option($value['id']);
+                $typography_stored = ddd_get_option($value['id']);
 
                 /* Font Size */
                 $val = $default['size'];
@@ -824,7 +816,7 @@ function blackbird_optionsframework_machine($options) {
             case "border":
 
                 $default = $value['std'];
-                $border_stored = blackbird_get_option($value['id']);
+                $border_stored = ddd_get_option($value['id']);
 
                 /* Border Width */
                 $val = $default['width'];
@@ -914,7 +906,7 @@ function blackbird_optionsframework_machine($options) {
 
                 $id = $array['id'];
                 $std = $array['std'];
-                $saved_std = blackbird_get_option($id);
+                $saved_std = ddd_get_option($id);
                 if ($saved_std != $std) {
                     $std = $saved_std;
                 }
@@ -944,20 +936,20 @@ function blackbird_optionsframework_machine($options) {
 }
 
 /* ----------------------------------------------------------------------------------- */
-/* OptionsFramework Uploader - blackbird_optionsframework_uploader_function */
+/* OptionsFramework Uploader - ddd_optionsframework_uploader_function */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_optionsframework_uploader_function($id, $std, $mod) {
+function ddd_optionsframework_uploader_function($id, $std, $mod) {
     //$uploader .= '<input type="file" id="attachement_'.$id.'" name="attachement_'.$id.'" class="upload_input"></input>';
     //$uploader .= '<span class="submit"><input name="save" type="submit" value="Upload" class="button upload_save" /></span>';
 
     $uploader = '';
-    $upload = blackbird_get_option($id);
+    $upload = ddd_get_option($id);
 
     if ($mod != 'min') {
         $val = $std;
-        if (blackbird_get_option($id) != "") {
-            $val = blackbird_get_option($id);
+        if (ddd_get_option($id) != "") {
+            $val = ddd_get_option($id);
         }
         $uploader .= '<input class=\'of-input\' name=\'' . $id . '\' id=\'' . $id . '_upload\' type=\'text\' value=\'' . str_replace("'", "", $val) . '\' />';
     }

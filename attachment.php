@@ -87,7 +87,7 @@
                 ?>
                 <?php the_content(__('Continue reading &rarr;', 'black-bird')); ?>
                 <?php wp_link_pages(array('before' => '' . __('Pages:', 'black-bird'), 'after' => '')); ?>
-                <?php blackbird_posted_in(); ?>
+                <?php ddd_posted_in(); ?>
                 <?php edit_post_link(__('Edit', 'black-bird'), ' ', ''); ?>
         <?php comments_template(); ?>
     <?php endwhile; ?>

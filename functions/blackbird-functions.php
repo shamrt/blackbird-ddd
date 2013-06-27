@@ -1,6 +1,6 @@
 <?php
 ob_start();
-function blackbird_theme_support() {
+function ddd_theme_support() {
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
     add_theme_support('menus');
@@ -18,31 +18,31 @@ function blackbird_theme_support() {
 // This theme styles the visual editor with editor-style.css to match the theme style.
     add_editor_style();
 }
-add_action('after_setup_theme', 'blackbird_theme_support');
+add_action('after_setup_theme', 'ddd_theme_support');
 /* ----------------------------------------------------------------------------------- */
 /* Custom Menus Function
 /*----------------------------------------------------------------------------------- */
 
 // Add CLASS attributes to the first <ul> occurence in wp_page_menu
-function blackbird_add_menuclass($ulclass) {
+function ddd_add_menuclass($ulclass) {
     return preg_replace('/<ul>/', '<ul class="ddsmoothmenu">', $ulclass, 1);
 }
 
-add_filter('wp_page_menu', 'blackbird_add_menuclass');
-add_action('init', 'blackbird_register_custom_menu');
+add_filter('wp_page_menu', 'ddd_add_menuclass');
+add_action('init', 'ddd_register_custom_menu');
 
-function blackbird_register_custom_menu() {
+function ddd_register_custom_menu() {
     register_nav_menu('custom_menu', __('Main Menu', 'black-bird'));
 }
 
-function blackbird_nav() {
+function ddd_nav() {
     if (function_exists('wp_nav_menu'))
-        wp_nav_menu(array('theme_location' => 'custom_menu', 'container_id' => 'menu', 'menu_class' => 'ddsmoothmenu', 'fallback_cb' => 'blackbird_nav_fallback'));
+        wp_nav_menu(array('theme_location' => 'custom_menu', 'container_id' => 'menu', 'menu_class' => 'ddsmoothmenu', 'fallback_cb' => 'ddd_nav_fallback'));
     else
-        blackbird_nav_fallback();
+        ddd_nav_fallback();
 }
 
-function blackbird_nav_fallback() {
+function ddd_nav_fallback() {
     ?>
     <div id="menu">
         <ul class="ddsmoothmenu">
@@ -54,7 +54,7 @@ function blackbird_nav_fallback() {
     <?php
 }
 
-function blackbird_nav_menu_items($items) {
+function ddd_nav_menu_items($items) {
     if (is_home()) {
         $homelink = '<li class="current_page_item">' . '<a href="' . home_url('/') . '">' . __('Home', 'black-bird') . '</a></li>';
     } else {
@@ -64,12 +64,12 @@ function blackbird_nav_menu_items($items) {
     return $items;
 }
 
-add_filter('wp_list_pages', 'blackbird_nav_menu_items');
+add_filter('wp_list_pages', 'ddd_nav_menu_items');
 /* ----------------------------------------------------------------------------------- */
 /* Breadcrumbs Plugin
   /*----------------------------------------------------------------------------------- */
 
-function blackbird_breadcrumbs() {
+function ddd_breadcrumbs() {
     $delimiter = '&raquo;';
     $home = 'Home'; // text for the 'Home' link
     $before = '<span class="current">'; // tag before the current crumb
@@ -163,7 +163,7 @@ function blackbird_breadcrumbs() {
  * Prints attached images from the post        
  */
 
-function blackbird_get_image($width, $height) {
+function ddd_get_image($width, $height) {
     $w = $width;
     $h = $height;
     global $post, $posts;
@@ -191,7 +191,7 @@ function blackbird_get_image($width, $height) {
  * Prints HTML with meta information for the current post (category, tags and permalink).
  *
  */
-function blackbird_posted_in() {
+function ddd_posted_in() {
 // Retrieves tag list of current post, separated by commas.
     $tag_list = get_the_tag_list('', ', ');
     if ($tag_list) {
@@ -227,7 +227,7 @@ if (!isset($content_width))
  *
  * @uses register_sidebar
  */
-function blackbird_widgets_init() {
+function ddd_widgets_init() {
 // Area 1, located at the top of the sidebar.
     register_sidebar(array(
         'name' => __('Primary Widget Area', 'black-bird'),
@@ -280,8 +280,8 @@ function blackbird_widgets_init() {
     ));
 }
 
-/** Register sidebars by running blackbird_widgets_init() on the widgets_init hook. */
-add_action('widgets_init', 'blackbird_widgets_init');
+/** Register sidebars by running ddd_widgets_init() on the widgets_init hook. */
+add_action('widgets_init', 'ddd_widgets_init');
 ?>
 <?php
 
@@ -289,7 +289,7 @@ add_action('widgets_init', 'blackbird_widgets_init');
  * Pagination
  *
  */
-function blackbird_pagination($pages = '', $range = 2) {
+function ddd_pagination($pages = '', $range = 2) {
     $showitems = ($range * 2) + 1;
     global $paged;
     if (empty($paged))
@@ -326,9 +326,9 @@ function blackbird_pagination($pages = '', $range = 2) {
 /* ----------------------------------------------------------------------------------- */
 /* Add Favicon
   /*----------------------------------------------------------------------------------- */
-function blackbird_childtheme_favicon() {
-    if (blackbird_get_option('blackbird_favicon') != '') {
-        echo '<link rel="shortcut icon" href="' . blackbird_get_option('blackbird_favicon') . '"/>' . "\n";
+function ddd_childtheme_favicon() {
+    if (ddd_get_option('ddd_favicon') != '') {
+        echo '<link rel="shortcut icon" href="' . ddd_get_option('ddd_favicon') . '"/>' . "\n";
     } else {
         ?>
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicon.ico" />
@@ -336,25 +336,25 @@ function blackbird_childtheme_favicon() {
     }
 }
 
-add_action('wp_head', 'blackbird_childtheme_favicon');
+add_action('wp_head', 'ddd_childtheme_favicon');
 /* ----------------------------------------------------------------------------------- */
 /* Show analytics code in footer */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_childtheme_analytics() {
-    $output = blackbird_get_option('blackbird_analytics');
+function ddd_childtheme_analytics() {
+    $output = ddd_get_option('ddd_analytics');
     if ($output <> "")
         echo "<script type='text/javascript'>" . stripslashes($output) . "\n" . "</script>";
 }
 
-add_action('wp_footer', 'blackbird_childtheme_analytics');
+add_action('wp_footer', 'ddd_childtheme_analytics');
 /* ----------------------------------------------------------------------------------- */
 /* Custom CSS Styles */
 /* ----------------------------------------------------------------------------------- */
 
-function blackbird_of_head_css() {
+function ddd_of_head_css() {
     $output = '';
-    $custom_css = blackbird_get_option('blackbird_customcss');
+    $custom_css = ddd_get_option('ddd_customcss');
     if ($custom_css <> '') {
         $output .= $custom_css . "\n";
     }
@@ -365,7 +365,7 @@ function blackbird_of_head_css() {
     }
 }
 
-add_action('wp_head', 'blackbird_of_head_css');
+add_action('wp_head', 'ddd_of_head_css');
 
 function get_category_id($cat_name) {
     $term = get_term_by('name', $cat_name, 'category');
@@ -373,7 +373,7 @@ function get_category_id($cat_name) {
 }
 
 //Trim excerpt
-function blackbird_custom_trim_excerpt($length) {
+function ddd_custom_trim_excerpt($length) {
     global $post;
     $explicit_excerpt = $post->post_excerpt;
     if ('' == $explicit_excerpt) {

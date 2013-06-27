@@ -6,7 +6,7 @@
  * @param  $path
  * @return mixed|string
  */
-function blackbird_document_root($path) {
+function ddd_document_root($path) {
     // If the file exists under DOCUMENT_ROOT, return DOCUMENT_ROOT
     if (@file_exists($_SERVER['DOCUMENT_ROOT'] . '/' . $path)) {
         return $_SERVER['DOCUMENT_ROOT'];
@@ -42,7 +42,7 @@ function blackbird_document_root($path) {
  * @param  $quality
  * @return array with image URL, width and height
  */
-function blackbird_image_resize($img_url, $width, $height, $crop = true, $quality = 100) {
+function ddd_image_resize($img_url, $width, $height, $crop = true, $quality = 100) {
     $upload_dir = wp_upload_dir();
     // This used to be the directory for the image cache prior to 3.7.2, so we will leave it that way...
     $upload_path = $upload_dir['basedir'] . '/thumb-cache';
@@ -76,7 +76,7 @@ function blackbird_image_resize($img_url, $width, $height, $crop = true, $qualit
         $file_path = $copy_to_file;
     } else {  // Locally hosted image
         //$file_path = $_SERVER['DOCUMENT_ROOT'] . $file_path['path'];
-        $file_path = blackbird_document_root($file_path['path']) . $file_path['path'];
+        $file_path = ddd_document_root($file_path['path']) . $file_path['path'];
     }
     if (!file_exists($file_path)) {
         $resized_image = array(
@@ -170,7 +170,7 @@ function blackbird_image_resize($img_url, $width, $height, $crop = true, $qualit
  * @param type $jpeg_quality
  * @return type 
  */
-function blackbird_thumbnail_resize($attach_id = null, $img_url = null, $width, $height, $crop = false, $jpeg_quality = 90) {
+function ddd_thumbnail_resize($attach_id = null, $img_url = null, $width, $height, $crop = false, $jpeg_quality = 90) {
     // this is an attachment, so we have the ID
     if ($attach_id) {
         $image_src = wp_get_attachment_image_src($attach_id, 'full');

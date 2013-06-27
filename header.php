@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
         <?php wp_head(); ?>	
     </head>				
-    <body <?php body_class(); ?> style="<?php if (blackbird_get_option('blackbird_bodybg') != '') { ?>background: fixed url(<?php echo blackbird_get_option('blackbird_bodybg'); ?>);<?php } else {
+    <body <?php body_class(); ?> style="<?php if (ddd_get_option('ddd_bodybg') != '') { ?>background: fixed url(<?php echo ddd_get_option('ddd_bodybg'); ?>);<?php } else {
             ?> background: fixed url(<?php echo get_template_directory_uri(); ?>/images/bg.jpg); <?php } ?>" >
         <div class="page">
             <div class="container">
@@ -39,7 +39,7 @@
                     <div class="menu_wrapper">
                         <navigation id="main-nav">
                             <a href="#" class="mobile_nav closed"><?php _e('Pages Navigation Menu','black-bird'); ?><span></span></a>
-                            <?php blackbird_nav(); ?> 
+                            <?php ddd_nav(); ?> 
                         </navigation>
                         <div class="top-search">
                             <?php get_search_form(); ?>

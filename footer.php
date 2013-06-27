@@ -21,8 +21,8 @@
                 -
                 <?php echo get_bloginfo('description'); ?>
             </span>
-            <?php if (blackbird_get_option('blackbird_footertext') != '') { ?>
-                <span class="copyright"><?php echo blackbird_get_option('blackbird_footertext'); ?></span> 
+            <?php if (ddd_get_option('ddd_footertext') != '') { ?>
+                <span class="copyright"><?php echo ddd_get_option('ddd_footertext'); ?></span> 
             <?php } else { ?>
                 <span class="copyright"><a href="http://sha.nemart.in"><?php _e('Website and hosting by Shane Martin', 'black-bird'); ?></a></span>
             <?php } ?>			
