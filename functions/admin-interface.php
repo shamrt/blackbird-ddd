@@ -81,16 +81,16 @@ function ddd_optionsframework_options_page() {
 
     <div class="wrap" id="of_container">
         <div id="of-popup-save" class="of-save-popup">
-            <div class="of-save-save"><?php _e('Options Updated','black-bird'); ?></div>
+            <div class="of-save-save"><?php _e('Options Updated','ddd'); ?></div>
         </div>
         <div id="of-popup-reset" class="of-save-popup">
-            <div class="of-save-reset"><?php _e('Options Reset','black-bird'); ?></div>
+            <div class="of-save-reset"><?php _e('Options Reset','ddd'); ?></div>
         </div>
         <form action="" enctype="multipart/form-data" id="ofform">
     <?php wp_nonce_field('theme-update-option'); ?>
             <div id="header">
                 <div class="logo">
-                    <h2><?php _e('BlackBird Theme Options','black-bird'); ?></h2>
+                    <h2><?php _e('DDD Theme Options','ddd'); ?></h2>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -109,11 +109,11 @@ function ddd_optionsframework_options_page() {
             </div>
             <div class="save_bar_top">
                 <img style="display:none" src="<?php echo get_template_directory_uri(); ?>/functions/images/loading-bottom.gif" class="ajax-loading-img ajax-loading-img-bottom" alt="Working..." />
-                <input type="submit" value="<?php _e('Save All Changes','black-bird'); ?>" class="button-primary" />
+                <input type="submit" value="<?php _e('Save All Changes','ddd'); ?>" class="button-primary" />
         </form>
         <form action="<?php echo esc_attr($_SERVER['REQUEST_URI']) ?>" method="post" style="display:inline" id="ofform-reset">
             <span class="submit-footer-reset">
-                <input name="reset" type="submit" value="<?php _e('Reset Options','black-bird'); ?>" class="button submit-button reset-button" onclick="return confirm('Click OK to reset. Any settings will be lost!');" />
+                <input name="reset" type="submit" value="<?php _e('Reset Options','ddd'); ?>" class="button submit-button reset-button" onclick="return confirm('Click OK to reset. Any settings will be lost!');" />
                 <input type="hidden" name="of_save" value="reset" />
             </span>
         </form>

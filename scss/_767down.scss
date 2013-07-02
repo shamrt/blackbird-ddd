@@ -1,19 +1,19 @@
 /* Header
 =================================*/
 
-// .top-search {
-//   height: 4px;
-//   margin-bottom: 0px;
+.top-search {
+  height: 4px;
+  margin-bottom: 0px;
 
-//   .searchform {
-//     display: none;
-//     margin-top: 30px;
-//     padding-right: 10px;
-//     margin-left: 80px;
-//     width: 50%;
-//     float: left;
-//   }
-// }
+  .searchform {
+    display: none;
+    margin-top: 30px;
+    padding-right: 10px;
+    margin-left: 80px;
+    width: 50%;
+    float: left;
+  }
+}
 
 .header-info {
   text-align: center;
@@ -28,6 +28,10 @@
 // .logo {
 //   text-align: center;
 // }
+
+.top-search .searchform input[type="text"] {
+  width: 235px;
+}
 
 
 /* Menu
@@ -98,15 +102,17 @@ li.depth-4 ul.children {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
-.flexslider .slides img {
-  display: block;
-  // width: 468px;
-  // height: 192px;
-}
 .flexslider {
   margin-top: 5px;
+  margin-bottom: 5px;
+
+  .slides img {
+    display: block;
+    // width: 468px;
+    // height: 192px;
+  }
 }
+
 .flex-caption {
   background-image: none;
   display: none;
@@ -123,6 +129,7 @@ li.depth-4 ul.children {
   border: solid 1px #FF0000;
   display: none;
 }
+
 /* Control Nav */
 .flex-control-nav {
   position: absolute;
@@ -130,6 +137,7 @@ li.depth-4 ul.children {
   text-align: right;
   right: 20px;
   text-indent: 9999px;
+
   li {
     margin: 0 0 0 5px;
     zoom: 1;
@@ -137,6 +145,7 @@ li.depth-4 ul.children {
     &:first-child {
       margin: 0;
     }
+
     a {
       width: 15px;
       height: 20px;
@@ -165,10 +174,6 @@ li.depth-4 ul.children {
     width: 468px;
     margin: 0 0px;
   }
-}
-
-.top-search .searchform input[type="text"] {
-  width: 235px;
 }
 
 

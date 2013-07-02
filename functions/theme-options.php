@@ -47,6 +47,7 @@ if (!function_exists('ddd_options')) {
                 "desc" => "Choose your own logo. Optimal Size: 221px Wide by 84px Height.",
                 "id" => "ddd_logo",
                 "type" => "upload"),
+
             array("name" => "Home Page Top Right Cell Info",
                 "desc" => "Enter your text for home page top right cell info.",
                 "id" => "ddd_topright_cell",
@@ -71,22 +72,29 @@ if (!function_exists('ddd_options')) {
                 "id" => "re_nm",
                 "std" => "on",
                 "type" => "radio",
-                "options" => $file_rename),
-
-                //Slider Setting
-                array("name" => "Home Top Feature",
-                    "type" => "heading")
+                "options" => $file_rename)
         );
 
         /* ---------------------------------------------------------------------------- */
         /* Slider Setting */
         /* ---------------------------------------------------------------------------- */
+        array_push($options, 
+            //Slider Setting
+            array("name" => "Flexslider Settings",
+                "type" => "heading")
+        );
+
         for ($i=1; $i <= 5; $i++) { 
             array_push($options, 
 
-                //First Slider
+                // Header
+                array("name" => "Slider $i ",
+                    "type" => "saperate",
+                    "class" => "saperator"),
+
+                // Slider
                 array("name" => "Home Top Feature $i - Image",
-                    "desc" => "Choose your image for first slider. Optimal size is 950px wide and 390px height.",
+                    "desc" => "Choose your image for first slider. Optimal size is 1140px wide and 468px height.",
                     "id" => "ddd_slideimage$i",
                     "std" => "",
                     "type" => "upload"),
@@ -111,93 +119,71 @@ if (!function_exists('ddd_options')) {
 
 
         /* ---------------------------------------------------------------------------- */
-        /* Homepage Feature Area */
+        /* Homepage tagline
         /* ---------------------------------------------------------------------------- */
         array_push($options, 
 
             array("name" => "Homepage Settings",
                 "type" => "heading"),
+
             //Homepage Main Heading 
             array("name" => "Home Page Heading",
                 "desc" => "Enter your heading text for home page",
                 "id" => "ddd_mainheading",
                 "std" => "",
-                "type" => "textarea"),
-            array("name" => "Home Page Feature Content",
+                "type" => "textarea")
+
+        );
+
+
+        /* ---------------------------------------------------------------------------- */
+        /* Homepage Feature Areas */
+        /* ---------------------------------------------------------------------------- */
+
+        array_push($options, 
+            
+            array("name" => "Home Page Features Content",
                 "type" => "saperate",
-                "class" => "saperator"),
-            //***Code for Feature Feature***//
-            array("name" => "First Feature Heading",
-                "desc" => "Enter your heading for first Feature area",
-                "id" => "ddd_headline1",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "First Feature Image",
-                "desc" => "Choose image for your first Feature area. Optimal size 158px x 165px",
-                "id" => "ddd_wimg1",
-                "std" => "",
-                "type" => "upload"),
-            array("name" => "First Feature Content",
-                "desc" => "Enter your content for first Feature area",
-                "id" => "ddd_feature1",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "First Feature Link",
-                "desc" => "Enter your link for first Feature area",
-                "id" => "ddd_link1",
-                "std" => "",
-                "type" => "text"),
+                "class" => "saperator")
+        );
 
-            //***Code for second Feature***//
-            array("name" => "Second Feature Heading",
-                "desc" => "Enter your heading for second Feature area",
-                "id" => "ddd_headline2",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "Second Feature Image",
-                "desc" => "Choose image for your second Feature area. Optimal size 158px x 165px",
-                "id" => "ddd_fimg2",
-                "std" => "",
-                "type" => "upload"),
-            array("name" => "Second Feature Content",
-                "desc" => "Enter your content for second feature area",
-                "id" => "ddd_feature2",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "Second Feature Link",
-                "desc" => "Enter your link for second Feature area",
-                "id" => "ddd_link2",
-                "std" => "",
-                "type" => "text"),
+        for ($i=1; $i <= 5; $i++) { 
+            array_push($options, 
 
-            //***Code for third Feature***//	
-            array("name" => "Third Feature Heading",
-                "desc" => "Enter your heading for third Feature area",
-                "id" => "ddd_headline3",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "Third Feature Image",
-                "desc" => "Choose image for your thrid Feature. Optimal size 158px x 165px",
-                "id" => "ddd_fimg3",
-                "std" => "",
-                "type" => "upload"),
-            array("name" => "Third Feature Content",
-                "desc" => "Enter your content for third Feature area",
-                "id" => "ddd_feature3",
-                "std" => "",
-                "type" => "textarea"),
-            array("name" => "Third Feature Link",
-                "desc" => "Enter your link for third feature area",
-                "id" => "ddd_link3",
-                "std" => "",
-                "type" => "text"),
+                //***Code for Feature***//    
+                array("name" => "Feature $i - Heading",
+                    "desc" => "Enter your heading for this feature area",
+                    "id" => "ddd_headline$i",
+                    "std" => "",
+                    "type" => "text"),
+                array("name" => "Feature $i - Image",
+                    "desc" => "Choose image for this feature. Optimal size 158px x 165px",
+                    "id" => "ddd_fimg$i",
+                    "std" => "",
+                    "type" => "upload"),
+                array("name" => "Feature $i - Body",
+                    "desc" => "Enter your content for this feature area",
+                    "id" => "ddd_feature$i",
+                    "std" => "",
+                    "type" => "textarea"),
+                array("name" => "Feature $i - Link",
+                    "desc" => "Enter your link for this feature area",
+                    "id" => "ddd_link$i",
+                    "std" => "",
+                    "type" => "text")
+            );
+
+        }
 
 
-            /* ---------------------------------------------------------------------------- */
-            /* Social Logos */
-            /* ---------------------------------------------------------------------------- */
+        /* ---------------------------------------------------------------------------- */
+        /* Social Logos */
+        /* ---------------------------------------------------------------------------- */
+        array_push($options, 
+        
             array("name" => "Social Logos",
                 "type" => "heading"),
+
             array("name" => "Facebook URL",
                 "desc" => "Enter your Facebook URL if you have one",
                 "id" => "ddd_facebook",

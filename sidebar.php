@@ -2,7 +2,7 @@
     <?php if (!dynamic_sidebar('primary-widget-area')) : ?>
         <?php get_search_form(); ?>
         <h3>
-            <?php _e('Archives', 'black-bird'); ?>
+            <?php _e('Archives', 'ddd'); ?>
         </h3>
         <ul>
             <?php wp_get_archives('type=monthly'); ?>

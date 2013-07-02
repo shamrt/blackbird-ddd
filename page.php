@@ -21,7 +21,7 @@
             <?php if (have_posts()) : the_post(); ?>
                 <?php the_content(); ?>
                 <div class="clear"></div>
-                <?php wp_link_pages(array('before' => '<div class="page-link"><span>' . __('Pages:', 'black-bird') . '</span>', 'after' => '</div>')); ?>
+                <?php wp_link_pages(array('before' => '<div class="page-link"><span>' . __('Pages:', 'ddd') . '</span>', 'after' => '</div>')); ?>
             <?php endif; ?>
 
             <!--Start Comment box-->

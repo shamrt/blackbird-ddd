@@ -16,12 +16,12 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>  
             <!--post start-->
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <h1 class="post_title single"><span><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(esc_attr__('Permalink to %s', 'black-bird'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a><span></h1>
+                <h1 class="post_title single"><span><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php printf(esc_attr__('Permalink to %s', 'ddd'), the_title_attribute('echo=0')); ?>"><?php the_title(); ?></a><span></h1>
                 <div class="post_content">
                     <?php the_content(); ?>
                     <div class="clear"></div>
 
-                    <?php wp_link_pages(array('before' => '<div class="page-link"><span>' . __('Pages:', 'black-bird') . '</span>', 'after' => '</div>')); ?>
+                    <?php wp_link_pages(array('before' => '<div class="page-link"><span>' . __('Pages:', 'ddd') . '</span>', 'after' => '</div>')); ?>
                     <?php if (has_tag()) { ?>
                     <div class="tag">
                         <?php the_tags(__('Post Tagged with ', ', ', '')); ?>
@@ -29,8 +29,8 @@
                     <?php } ?>
                 </div>                              
                 <ul class="post_meta clearfix">
-                    <li class="posted_by"><span><?php _e('Posted by', 'black-bird'); ?></span>&nbsp;&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/admin.png" /><?php the_author_posts_link(); ?></li>
-                    <li class="post_category"><span><?php _e('Posted in', 'black-bird'); ?></span>&nbsp;&nbsp;<?php the_category(', '); ?></li>
+                    <li class="posted_by"><span><?php _e('Posted by', 'ddd'); ?></span>&nbsp;&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/admin.png" /><?php the_author_posts_link(); ?></li>
+                    <li class="post_category"><span><?php _e('Posted in', 'ddd'); ?></span>&nbsp;&nbsp;<?php the_category(', '); ?></li>
                     <li class="post_date"><img src="<?php echo get_template_directory_uri(); ?>/images/date.png" />&nbsp;&nbsp; <?php echo get_the_time('M, d, Y') ?></li>
                     <li class="post_comment"><img src="<?php echo get_template_directory_uri(); ?>/images/comment.png" />&nbsp;&nbsp;<span><?php comments_popup_link('No Comments.', '1 Comment.', '% Comments.'); ?></span></li>
                 </ul>
@@ -42,15 +42,15 @@
                 ?>
             <div class="post">
                 <p>
-                    <?php _e('Sorry, no posts matched your criteria.', 'black-bird'); ?>
+                    <?php _e('Sorry, no posts matched your criteria.', 'ddd'); ?>
                 </p>
             </div>
         <?php endif; ?>
         <!--End Loop-->
         <nav id="nav-single"> <span class="nav-previous">
-            <?php previous_post_link('%link', __('<span class="meta-nav">&larr;</span> Previous Post ', 'black-bird')); ?>
+            <?php previous_post_link('%link', __('<span class="meta-nav">&larr;</span> Previous Post ', 'ddd')); ?>
         </span> <span class="nav-next">
-        <?php next_post_link('%link', __('Next Post <span class="meta-nav">&rarr;</span>', 'black-bird')); ?>
+        <?php next_post_link('%link', __('Next Post <span class="meta-nav">&rarr;</span>', 'ddd')); ?>
     </span> </nav>
     <!--Start Comment box-->
     <?php comments_template(); ?>

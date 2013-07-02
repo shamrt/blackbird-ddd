@@ -1,6 +1,6 @@
 == Changelog ==
 
-= Theme Name: Blackbird Theme Pro=
+= Theme Name: DDD Theme Pro=
 
 = Version: 1.1.6 =
 
@@ -45,4 +45,4 @@
 
 = Version: 1.0 =
 
-* Blackbird Theme is created on 9/07/2012.
+* DDD Theme is created on 9/07/2012.

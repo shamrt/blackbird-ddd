@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <div class="page-heading">
-    <h1 class="page-title"><a href="#"><?php printf(__('Category Archives: %s', 'black-bird'), '' . single_cat_title('', false) . ''); ?></a></h1>
+    <h1 class="page-title"><a href="#"><?php printf(__('Category Archives: %s', 'ddd'), '' . single_cat_title('', false) . ''); ?></a></h1>
     <div class="clear"></div>
 </div>
 <!--Start Page Content -->
@@ -29,9 +29,9 @@
                             <?php get_template_part('loop', 'category'); ?>
                             <div class="clear"></div>
                             <nav id="nav-single"> <span class="nav-previous">
-                                    <?php next_posts_link(__('&larr; Older posts', 'black-bird')); ?>
+                                    <?php next_posts_link(__('&larr; Older posts', 'ddd')); ?>
                                 </span> <span class="nav-next">
-                                    <?php previous_posts_link(__('Newer posts &rarr;', 'black-bird')); ?>
+                                    <?php previous_posts_link(__('Newer posts &rarr;', 'ddd')); ?>
                                 </span> </nav>
                         <?php endif; ?>
                     </div>

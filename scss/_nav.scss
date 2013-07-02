@@ -4,6 +4,7 @@
 .menu_wrapper {
   background: $beige;
   // background: #343434 url(images/menubg.png) repeat-x;
+  border-bottom: 2px solid $brick;
   clear: both;
   // display: inline-block;
   // margin-top: 20px;
@@ -281,11 +282,11 @@
       padding-bottom: 15px;
     }
     a:hover {
-      color: #2565ac;
+      color: $link-color;
     }
   }
   > li.current_page_item > a {
-    color: #2565ac;
+    color: $link-color;
   }
 }
 

@@ -38,7 +38,7 @@
                     <!--start Menu wrapper-->
                     <div class="menu_wrapper">
                         <navigation id="main-nav">
-                            <a href="#" class="mobile_nav closed"><?php _e('Pages Navigation Menu','black-bird'); ?><span></span></a>
+                            <a href="#" class="mobile_nav closed"><?php _e('Pages Navigation Menu','ddd'); ?><span></span></a>
                             <?php ddd_nav(); ?> 
                         </navigation>
                         <div class="top-search">
@@ -46,4 +46,5 @@
                         </div>
                     </div>
                     <!--End Menu wrapper-->
-                    <!-- <div class="clear"></div> -->
+                    
+                    <div id="content">

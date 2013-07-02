@@ -25,9 +25,9 @@
             <!--End Post-->
             <div class="clear"></div>
             <nav id="nav-single"> <span class="nav-previous">
-                    <?php next_posts_link(__('&larr; Older posts', 'black-bird')); ?>
+                    <?php next_posts_link(__('&larr; Older posts', 'ddd')); ?>
                 </span> <span class="nav-next">
-                    <?php previous_posts_link(__('Newer posts &rarr;', 'black-bird')); ?>
+                    <?php previous_posts_link(__('Newer posts &rarr;', 'ddd')); ?>
                 </span> </nav>
         </div>
 

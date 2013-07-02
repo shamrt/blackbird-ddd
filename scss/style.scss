@@ -1,6 +1,6 @@
 /*
 Theme Name: BlackBird-DDD
-Theme URI: http://www.inkthemes.com/wp-themes/blackbird-responsive-wordpress-theme/
+Theme URI: http://dancedancedance.ca
 Description: Blackbird-DDD is derived from the free Blackbird Lite theme; it shares some elements --- specifically on the front-page --- but it ultimately an altogether different theme.
 Author: Shane Martin
 Author URI: http://sha.nemart.in
@@ -173,6 +173,14 @@ Tags:two-columns, fixed-width, custom-header, custom-background, threaded-commen
   .prev:hover {
     background: #f7d705 !important;
   }
+}
+
+
+/* Content 
+====================================================*/
+
+#content {
+  margin: 0 1%;
 }
 
 

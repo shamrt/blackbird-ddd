@@ -10,7 +10,7 @@ function ddd_theme_support() {
     add_image_size('sidebar-thumbnail', 48, 48, true); // sidebar blog thumbnail size, box resize mode
     add_image_size('post_thumbnail', 595, 300, true);
     //Load languages file
-    load_theme_textdomain('black-bird', get_template_directory() . '/languages');
+    load_theme_textdomain('ddd', get_template_directory() . '/languages');
     $locale = get_locale();
     $locale_file = get_template_directory() . "/languages/$locale.php";
     if (is_readable($locale_file))
@@ -32,7 +32,7 @@ add_filter('wp_page_menu', 'ddd_add_menuclass');
 add_action('init', 'ddd_register_custom_menu');
 
 function ddd_register_custom_menu() {
-    register_nav_menu('custom_menu', __('Main Menu', 'black-bird'));
+    register_nav_menu('custom_menu', __('Main Menu', 'ddd'));
 }
 
 function ddd_nav() {
@@ -56,9 +56,9 @@ function ddd_nav_fallback() {
 
 function ddd_nav_menu_items($items) {
     if (is_home()) {
-        $homelink = '<li class="current_page_item">' . '<a href="' . home_url('/') . '">' . __('Home', 'black-bird') . '</a></li>';
+        $homelink = '<li class="current_page_item">' . '<a href="' . home_url('/') . '">' . __('Home', 'ddd') . '</a></li>';
     } else {
-        $homelink = '<li>' . '<a href="' . home_url('/') . '">' . __('Home', 'black-bird') . '</a></li>';
+        $homelink = '<li>' . '<a href="' . home_url('/') . '">' . __('Home', 'ddd') . '</a></li>';
     }
     $items = $homelink . $items;
     return $items;
@@ -147,7 +147,7 @@ function ddd_breadcrumbs() {
     if (get_query_var('paged')) {
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ' (';
-        echo __('Page', 'black-bird') . ' ' . get_query_var('paged');
+        echo __('Page', 'ddd') . ' ' . get_query_var('paged');
         if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author())
             echo ')';
     }
@@ -195,11 +195,11 @@ function ddd_posted_in() {
 // Retrieves tag list of current post, separated by commas.
     $tag_list = get_the_tag_list('', ', ');
     if ($tag_list) {
-        $posted_in = __('This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'black-bird');
+        $posted_in = __('This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ddd');
     } elseif (is_object_in_taxonomy(get_post_type(), 'category')) {
-        $posted_in = __('This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'black-bird');
+        $posted_in = __('This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ddd');
     } else {
-        $posted_in = __('Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'black-bird');
+        $posted_in = __('Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ddd');
     }
 // Prints the string, replacing the placeholders.
     printf(
@@ -230,9 +230,9 @@ if (!isset($content_width))
 function ddd_widgets_init() {
 // Area 1, located at the top of the sidebar.
     register_sidebar(array(
-        'name' => __('Primary Widget Area', 'black-bird'),
+        'name' => __('Primary Widget Area', 'ddd'),
         'id' => 'primary-widget-area',
-        'description' => __('The primary widget area', 'black-bird'),
+        'description' => __('The primary widget area', 'ddd'),
         'before_widget' => '<div class="">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -240,9 +240,9 @@ function ddd_widgets_init() {
     ));
 // Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
     register_sidebar(array(
-        'name' => __('Secondary Widget Area', 'black-bird'),
+        'name' => __('Secondary Widget Area', 'ddd'),
         'id' => 'secondary-widget-area',
-        'description' => __('The secondary widget area', 'black-bird'),
+        'description' => __('The secondary widget area', 'ddd'),
         'before_widget' => '<div class="">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -250,9 +250,9 @@ function ddd_widgets_init() {
     ));
     // Area 3, located in the footer. Empty by default.
     register_sidebar(array(
-        'name' => __('First Footer Widget Area', 'black-bird'),
+        'name' => __('First Footer Widget Area', 'ddd'),
         'id' => 'first-footer-widget-area',
-        'description' => __('The first footer widget area', 'black-bird'),
+        'description' => __('The first footer widget area', 'ddd'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h4>',
@@ -260,9 +260,9 @@ function ddd_widgets_init() {
     ));
     // Area 4, located in the footer. Empty by default.
     register_sidebar(array(
-        'name' => __('Second Footer Widget Area', 'black-bird'),
+        'name' => __('Second Footer Widget Area', 'ddd'),
         'id' => 'second-footer-widget-area',
-        'description' => __('The second footer widget area', 'black-bird'),
+        'description' => __('The second footer widget area', 'ddd'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h4>',
@@ -270,9 +270,9 @@ function ddd_widgets_init() {
     ));
     // Area 5, located in the footer. Empty by default.
     register_sidebar(array(
-        'name' => __('Third Footer Widget Area', 'black-bird'),
+        'name' => __('Third Footer Widget Area', 'ddd'),
         'id' => 'third-footer-widget-area',
-        'description' => __('The third footer widget area', 'black-bird'),
+        'description' => __('The third footer widget area', 'ddd'),
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h4>',
@@ -331,7 +331,7 @@ function ddd_childtheme_favicon() {
         echo '<link rel="shortcut icon" href="' . ddd_get_option('ddd_favicon') . '"/>' . "\n";
     } else {
         ?>
-        <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicon.ico" />
+        <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/images/ddd/favicon.png" />
         <?php
     }
 }

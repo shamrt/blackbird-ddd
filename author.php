@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 <div class="page-heading">
     <?php if (have_posts()) : the_post(); ?>
-        <h1 class="page-title"><a href="#"><?php printf(__('Author Archives: %s', 'black-bird'), "<span class='vcard'><a class='url fn n' href='" . get_author_posts_url(get_the_author_meta('ID')) . "' title='" . esc_attr(get_the_author()) . "' rel='me'>" . get_the_author() . "</a></span>"); ?></a></h1>
+        <h1 class="page-title"><a href="#"><?php printf(__('Author Archives: %s', 'ddd'), "<span class='vcard'><a class='url fn n' href='" . get_author_posts_url(get_the_author_meta('ID')) . "' title='" . esc_attr(get_the_author()) . "' rel='me'>" . get_the_author() . "</a></span>"); ?></a></h1>
     </div>
     <div class="clear"></div>
     <!--Start Page Content -->
@@ -35,7 +35,7 @@
                             <div id="author-avatar"> <?php echo get_avatar(get_the_author_meta('user_email'), apply_filters('ddd_author_bio_avatar_size', 60)); ?> </div>
                             <!-- #author-avatar -->
                             <div id="author-description">
-                                <h2><?php printf(__('About %s', 'black-bird'), get_the_author()); ?></h2>
+                                <h2><?php printf(__('About %s', 'ddd'), get_the_author()); ?></h2>
                                 <?php the_author_meta('description'); ?>
                             </div>
                             <!-- #author-description	-->
@@ -56,9 +56,9 @@
                     ?>
                     <div class="clear"></div>
                     <nav id="nav-single"> <span class="nav-previous">
-                            <?php next_posts_link(__('&larr; Older posts', 'black-bird')); ?>
+                            <?php next_posts_link(__('&larr; Older posts', 'ddd')); ?>
                         </span> <span class="nav-next">
-                            <?php previous_posts_link(__('Newer posts &rarr;', 'black-bird')); ?>
+                            <?php previous_posts_link(__('Newer posts &rarr;', 'ddd')); ?>
                         </span> </nav>
                 <?php endif; ?>	
             </div>

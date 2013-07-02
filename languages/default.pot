@@ -1,8 +1,8 @@
-# Copyright (C) 2012 Black Bird Theme 
+# Copyright (C) 2012 Black Bird DDD Theme  
 # This file is distributed under the same license as the WordPress package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Black Bird Theme  1.0\n"
+"Project-Id-Version: Black Bird DDD Theme   1.0\n"
 "Report-Msgid-Bugs-To: admin@inkthemes.com"
 "POT-Creation-Date: 2012-06-12 01:47:23+00:00\n"
 "MIME-Version: 1.0\n"
