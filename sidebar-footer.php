@@ -3,8 +3,8 @@
         <?php dynamic_sidebar('first-footer-widget-area'); ?>
     <?php else : ?>  
         <h3><?php _e('BUSINESS DETAILS','ddd'); ?></h3>
-        <p><?php _e('Premium WordPress Themes with Single Click Installation, Just a Click and your website is ready for use. Your Site is faster to built, easy to use & Search Engine Optimized.','ddd'); ?></p>
-        <p><?php _e('If your looking for help with our themes this is the place to be. We have a ton of great videos that show you how to setup our themes. And every theme comes with PDF & Video Documentation to help with almost any issue.','ddd'); ?></p>               
+        <p><?php _e('Lorem ipsum Consequat ea consectetur anim tempor sed eu id ut laboris enim enim mollit in Ut ex aliquip deserunt do.','ddd'); ?></p>
+        <p><?php _e('Non incididunt Excepteur voluptate fugiat quis esse consectetur sint et anim. Lorem ipsum Consectetur pariatur sit Excepteur in aliqua nostrud dolor amet elit.','ddd'); ?></p>               
     <?php endif; ?> 
 </div>
 <div class="widget_inner">

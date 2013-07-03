@@ -1,0 +1,27 @@
+.testimonials {
+    @include clearfix;
+
+    .quote {
+        clear: both;
+        margin-bottom: $drop;
+
+        blockquote {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+
+        cite.author {
+            display: block;
+            text-align: right;
+
+            &:before {
+                content: "~ ";
+            }
+
+            .excerpt {
+                color: $gray;
+            }
+        }
+    }
+    
+}

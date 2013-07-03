@@ -386,7 +386,8 @@ h1.title {
 /*-----------------------------------------------------*/
 
 #commentsbox {
-  margin: 0;
+  border-top: 1px solid $off-white;
+  margin: 2em 0 0;
 }
 
 ol.commentlist {
@@ -746,11 +747,14 @@ h1.post_title.single {
     padding-top: 0px;
     border-top: 1px dashed #eeeeee;
     border-bottom: dashed 1px #eeeeee;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 
     span {
       color: #7e7d7d;
+    }
+
+    img {
+      padding: 0 2px;
     }
 
     a {

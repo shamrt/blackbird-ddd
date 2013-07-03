@@ -28,12 +28,9 @@
                     </div>
                     <?php } ?>
                 </div>                              
-                <ul class="post_meta clearfix">
-                    <li class="posted_by"><span><?php _e('Posted by', 'ddd'); ?></span>&nbsp;&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/images/admin.png" /><?php the_author_posts_link(); ?></li>
-                    <li class="post_category"><span><?php _e('Posted in', 'ddd'); ?></span>&nbsp;&nbsp;<?php the_category(', '); ?></li>
-                    <li class="post_date"><img src="<?php echo get_template_directory_uri(); ?>/images/date.png" />&nbsp;&nbsp; <?php echo get_the_time('M, d, Y') ?></li>
-                    <li class="post_comment"><img src="<?php echo get_template_directory_uri(); ?>/images/comment.png" />&nbsp;&nbsp;<span><?php comments_popup_link('No Comments.', '1 Comment.', '% Comments.'); ?></span></li>
-                </ul>
+                
+                <?php get_template_part("post", "meta"); // Get post metadata ?>
+                
             </div>
             <!--End Post-->
             <?php

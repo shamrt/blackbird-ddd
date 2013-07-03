@@ -12,7 +12,7 @@
 ?>
 <?php get_header(); ?>
 <div class="page-heading">
-    <h1 class="page-title"><?php the_title(); ?></h1>
+    <h1 class="page-title"><?php is_home() ? single_post_title() : the_title(); ?></h1>
     <div class="clear"></div>
 </div>
 <!--Start Page Content -->

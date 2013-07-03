@@ -2,8 +2,9 @@
 
 body {
   color: #717273;
-  font-family: "Trebuchet MS";
-  font-size: 13px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -11,35 +12,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #122432;
   font-family: "Poiret One";
   font-weight: normal;
-  margin: 0.5em 0;
+  margin: 1.2em 0 0.3em;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 2em
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 1.85em;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.6em;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
-p {
+p, ul, ol {
   margin: 0 0 1.5em;
+
+  &:last-child {
+    margin-bottom: 2em;
+  }
 }
 
 a {

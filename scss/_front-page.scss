@@ -9,12 +9,14 @@
   padding: 0 10px;
   margin-bottom: 0;
   max-width: 100%;
+
   h1 {
-    font-size: 36px;
-    text-align: center;
     color: #12222f;
-    line-height: 45px;
+    font-size: 36px;
     font-weight: normal;
+    line-height: 45px;
+    margin: 0.5em 0;
+    text-align: center;
   }
 }
 
@@ -60,9 +62,11 @@ h1.ftitle {
       color: $black;
     }
   }
+
   p {
     color: #717273;
     font-size: 13px;
+    min-height: 2em;
     padding: 0 10px;
     text-align: center;
   }

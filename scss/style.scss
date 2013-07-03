@@ -20,12 +20,17 @@ Tags:two-columns, fixed-width, custom-header, custom-background, threaded-commen
 @import "base";
 
 @import "nav";
+@import "searchform";
+
+// Plugins
 @import "plugins/flexslider";
+@import "plugins/testimonials_by_woothemes";
+
+// Pages
 @import "front-page";
 @import "pages";
 
 @import "wordpress";
-@import "searchform";
 
 // @import url(css/prettyPhoto.css);
 
@@ -203,6 +208,7 @@ Tags:two-columns, fixed-width, custom-header, custom-background, threaded-commen
   p {
     text-align: left;
   }
+
   ul {
     list-style: none;
     margin-top: 10px;
@@ -297,6 +303,8 @@ Tags:two-columns, fixed-width, custom-header, custom-background, threaded-commen
 
     ul {
       list-style: none;
+      padding-left: 0;
+
       li {
         margin-left: 0px;
         font-size: 15px;
@@ -335,18 +343,23 @@ Tags:two-columns, fixed-width, custom-header, custom-background, threaded-commen
   background-color: #000;
   padding: 0 1%;
 
-  .footer_bottom_inner span {
-    &.copyright {
-      float: right;
-      color: #9f9e9e;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-    &.blog-desc {
-      float: left;
-      color: #4d4c4c;
-      margin-top: 15px;
-      margin-bottom: 15px;
+  .footer_bottom_inner {
+    padding-right: 1%;
+    padding-left: 1%;
+
+    span {
+      &.copyright {
+        float: right;
+        color: #9f9e9e;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      &.blog-desc {
+        float: left;
+        color: #4d4c4c;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
