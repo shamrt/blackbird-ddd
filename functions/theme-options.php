@@ -147,7 +147,7 @@ if (!function_exists('ddd_options')) {
                 "class" => "saperator")
         );
 
-        for ($i=1; $i <= 5; $i++) { 
+        for ($i=1; $i <= 3; $i++) { 
             array_push($options, 
 
                 //***Code for Feature***//    
