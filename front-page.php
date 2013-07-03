@@ -108,35 +108,38 @@ $feature_content = array(
         <?php foreach ($feature_content as $fc) { ?>
             <div class="feature-content-inner <?php echo $fc[1]; ?>">
 
-                <?php if (ddd_get_option('ddd_fimg' . $fc[0]) != '') { ?>
-                    <div class="circle"><img src="<?php echo ddd_get_option('ddd_fimg' . $fc[0]); ?>" /></div>
-                <?php } else { ?>
-                    <div class="circle">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/ddd/feature<?php echo $fc[0]; ?>.jpg" />
-                    </div>
-                <?php } ?>
+                <div class="circle">
 
-                <?php if (ddd_get_option('ddd_headline' . $fc[0]) != '') { ?>
+                    <a href="<?php if (ddd_get_option('ddd_link'.$fc[0]) != '') { echo ddd_get_option('ddd_link'.$fc[0]); } ?>">
+                        <?php if (ddd_get_option('ddd_fimg'.$fc[0]) != '') { ?>
+                            <img src="<?php echo ddd_get_option('ddd_fimg'.$fc[0]); ?>" />
+                        <?php } else { ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/ddd/feature<?php echo $fc[0]; ?>.jpg" />
+                        <?php } ?>
+                    </a> 
+                </div>
+
+                <?php if (ddd_get_option('ddd_headline'.$fc[0]) != '') { ?>
                     <h1>
                         <a href="<?php
-                        if (ddd_get_option('ddd_link' . $fc[0]) != '') {
-                            echo ddd_get_option('ddd_link' . $fc[0]);
+                        if (ddd_get_option('ddd_link'.$fc[0]) != '') {
+                            echo ddd_get_option('ddd_link'.$fc[0]);
                         }
-                        ?>"><?php echo stripslashes(ddd_get_option('ddd_headline' . $fc[0])); ?></a>
+                        ?>"><?php echo stripslashes(ddd_get_option('ddd_headline'.$fc[0])); ?></a>
                     </h1>
                 <?php } else { ?>
-                    <h1><a href="#"><?php _e('Professional Design', 'ddd'); ?></a></h1>
+                    <h1><a href="#"><?php _e('Adipisicing amet sit', 'ddd'); ?></a></h1>
                 <?php } ?>
 
-                <?php if (ddd_get_option('ddd_feature' . $fc[0]) != '') { ?>
-                    <p><?php echo stripslashes(ddd_get_option('ddd_feature' . $fc[0])); ?></p>
+                <?php if (ddd_get_option('ddd_feature'.$fc[0]) != '') { ?>
+                    <p><?php echo stripslashes(ddd_get_option('ddd_feature'.$fc[0])); ?></p>
                 <?php } else { ?>
-                    <p><?php _e('The BlackBird Wordpress Theme is highly optimized to look Professional. So that your website looks great to your visitors.', 'ddd'); ?></p>
+                    <p><?php _e('Lorem ipsum Duis dolore sint laboris consequat anim culpa esse do dolor elit sunt magna consequat pariatur cillum labore nisi.', 'ddd'); ?></p>
                 <?php } ?>
 
                 <a class="read-more" href="<?php
-                if (ddd_get_option('ddd_link' . $fc[0]) != '') {
-                    echo ddd_get_option('ddd_link' . $fc[0]);
+                if (ddd_get_option('ddd_link'.$fc[0]) != '') {
+                    echo ddd_get_option('ddd_link'.$fc[0]);
                 }
                 ?>"><?php _e('Read More', 'ddd') ?></a> 
             </div>    
