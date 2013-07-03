@@ -205,7 +205,7 @@ a img {
       background-color: #fff;
       background-image: none;
       a:hover {
-        color: #f8ca23;
+        color: $link-color;
       }
     }
   }
@@ -299,7 +299,7 @@ h1.title {
     background: url(images/email.png) 5px 10px no-repeat;
     padding-left: 25px;
     &:focus {
-      border: 1px solid #FFCC66;
+      border: 1px solid darken($link-color, 10%);
     }
   }
   &[type="submit"] {
@@ -571,13 +571,13 @@ ol.commentlist li.comment {
   border: 1px solid #d9dada;
   &:focus {
     background: #fff;
-    border: 1px solid #FFCC66;
+    border: 1px solid $brick;
   }
 }
 
 textarea#comment:focus {
   background: #fff;
-  border: 1px solid #FFCC66;
+  border: 1px solid $brick;
 }
 
 input#commentSubmit {
@@ -663,13 +663,20 @@ h1.post_title.single {
   @extend .grid_17;
   @include grid_first;
   padding-top: 20px;
+
   .post {
     position: relative;
   }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
   img {
     max-width: 630px;
     height: auto;
   }
+
   .post .post_title {
     padding-top: 0;
     margin-top: 0;
@@ -719,6 +726,8 @@ h1.post_title.single {
     margin-bottom: 15px;
     line-height: 22px;
 
+
+
     a {
       color: $black;
       font-size: 30px;
@@ -731,7 +740,7 @@ h1.post_title.single {
 
   .post_content .read_more {
     display: block;
-    color: #c5a809;
+  color: darken($link-color, 10%);
     font-size: 13px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -761,7 +770,7 @@ h1.post_title.single {
       color: $link-color;
       &:hover {
         opacity: 0.5;
-        color: #f8ca23;
+        color: darken($link-color, 10%);
       }
     }
 
