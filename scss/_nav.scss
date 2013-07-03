@@ -82,6 +82,7 @@
 
 
   .sub-menu {
+    border-bottom: 2px solid $menu-border-color;
     margin: 0;
     padding-left: 0;
   }
@@ -106,7 +107,6 @@
 
       > ul {
         background: $menu-bg-color;
-        border-bottom: 2px solid $menu-border-color;
         display: none;
         left: 0;
         margin-left: 10px;
@@ -129,19 +129,21 @@
         color: $menu-link-color;
 
         a {
+          // background: url(images/menusep.png) bottom repeat-x;
+          background: $menu-bg-color;
           color: $menu-link-color;
-          width: 140px;
-          height: auto;
-          float: none;
           display: block;
-          text-align: left;
-          text-shadow: none;
+          float: none;
+          font-size: 13px;
+          height: auto;
           margin: 0;
           padding: 8px 18px;
-          text-decoration: none;
           position: relative;
-          font-size: 13px;
-          background: url(images/menusep.png) bottom repeat-x;
+          text-align: left;
+          text-shadow: none;
+          text-decoration: none;
+          width: 140px;
+
           &:after {
             width: 100%;
             content: '';
@@ -149,27 +151,31 @@
             left: 0;
             top: 0;
           }
-        }
 
-        li li:last-child a {
-          border-top: none;
-          background-image: none;
-          &:after {
-            border-top: none;
-            background-image: none;
+          &:hover {
+            background: darken($menu-bg-color, 5%);
           }
         }
-        &:last-child a:after {
-          width: 100%;
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          // border-radius: 5px;
-          color: #000;
-          background: none;
-          background-image: none;
-        }
+
+        // li li:last-child a {
+        //   border-top: none;
+        //   background-image: none;
+        //   &:after {
+        //     border-top: none;
+        //     background-image: none;
+        //   }
+        // }
+        // &:last-child a:after {
+        //   width: 100%;
+        //   content: '';
+        //   position: absolute;
+        //   left: 0;
+        //   bottom: 0;
+        //   // border-radius: 5px;
+        //   color: #000;
+        //   background: none;
+        //   background-image: none;
+        // }
       }
     }
   }
@@ -264,9 +270,9 @@
   li.current_page_item a {
     color: $link-active;
   }
-  .ddsmoothmenu li li:last-child a {
-    background: none;
-  }
+  // .ddsmoothmenu li li:last-child a {
+  //   background: none;
+  // }
 }
 
 
